@@ -18,7 +18,7 @@ define config.name = _("Throne of glass")
 ## Визначає, чи наведений вище заголовок показано на екрані головного меню.
 ## Установіть значення «False» для приховання заголовка.
 
-define gui.show_name = True
+define gui.show_name = False
 
 
 ## Версія гри.

@@ -10,6 +10,9 @@ define e = Character("Ейлін")
 
 label start:
 
+    call splashscreen  # проигрываем интро
+    return  # дальше Ren'Py покажет главное меню
+
     # Показ тла. Типово використовується заповнювач, але ви можете
     # додати файл (з назвою «bg room.png» або «bg room.jpg») до
     # теки images, щоб показати його.

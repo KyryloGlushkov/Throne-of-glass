@@ -289,48 +289,29 @@ style quick_button_text:
 
 screen navigation():
 
-    vbox:
-        style_prefix "navigation"
+    if renpy.get_screen("main_menu"):
 
-        xpos gui.navigation_xpos
-        yalign 0.5
-
-        spacing gui.navigation_spacing
-
-        if main_menu:
+        # ЛІВА КОЛОНКА
+        vbox:
+            xalign 0.0
+            xoffset 60
+            yalign 0.5
+            spacing gui.navigation_spacing
 
             textbutton _("Почати") action Start()
+            textbutton _("Завантажити") action ShowMenu("load")
+            textbutton _("Налаштування") action ShowMenu("preferences")
 
-        else:
+        # ПРАВА КОЛОНКА
+        vbox:
+            xalign 1.0
+            xoffset -60
+            yalign 0.5
+            spacing gui.navigation_spacing
 
-            textbutton _("Історія") action ShowMenu("history")
-
-            textbutton _("Зберегти") action ShowMenu("save")
-
-        textbutton _("Завантажити") action ShowMenu("load")
-
-        textbutton _("Налаштування") action ShowMenu("preferences")
-
-        if _in_replay:
-
-            textbutton _("Закінчити повтор") action EndReplay(confirm=True)
-
-        elif not main_menu:
-
-            textbutton _("Головне меню") action MainMenu()
-
-        textbutton _("Про гру") action ShowMenu("about")
-
-        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
-
-            ## Довідка не є необхідною або доречною для мобільних пристроїв.
+            textbutton _("Про гру") action ShowMenu("about")
             textbutton _("Довідка") action ShowMenu("help")
-
-        if renpy.variant("pc"):
-
-            ## Кнопка виходу заборонена на iOS й непотрібна на Android та Web.
-            textbutton _("Вийти") action Quit(confirm=not main_menu)
-
+            textbutton _("Вийти") action Quit(confirm=True)
 
 style navigation_button is gui_button
 style navigation_button_text is gui_button_text
@@ -359,6 +340,11 @@ screen main_menu():
     ## Ця порожня рамка затемнює головне меню.
     frame:
         style "main_menu_frame"
+    frame:
+        style "main_menu_frame_left"
+
+
+
 
     ## Оператор "use" включає інший екран усередині цього. Фактичний уміст
     ## головного меню знаходиться на екрані навігації.
@@ -382,10 +368,15 @@ style main_menu_text is gui_text
 style main_menu_title is main_menu_text
 style main_menu_version is main_menu_text
 
+style main_menu_frame_left:
+    xsize 420          # ширина
+    yfill True         # растягивается по высоте
+    xalign 0.0         # прижатие к левому краю
+    background "gui/overlay/main_menu.png"
 style main_menu_frame:
     xsize 420
     yfill True
-
+    xalign 1.0
     background "gui/overlay/main_menu.png"
 
 style main_menu_vbox:

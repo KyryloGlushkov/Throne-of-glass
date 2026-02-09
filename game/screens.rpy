@@ -287,6 +287,72 @@ style quick_button_text:
 ## Цей екран включено в головне та ігрове меню і забезпечує навігацію до інших
 ## меню та початку гри.
 
+## ────────────────────────────────────────────────
+## Стиль скляних кнопок (використовуємо одну PNG для всіх станів)
+## ────────────────────────────────────────────────
+
+style glass_button:
+    background Frame("gui/glass_button.png", 0, 0)   # зберігає оригінальний розмір без розтягування
+    hover_background Frame("gui/glass_button.png", 0, 0)
+
+    # ТОЧНІ РОЗМІРИ КНОПКИ = РОЗМІРУ PNG
+    xsize 340
+    ysize 60
+
+    xminimum 340
+    xmaximum 340
+    yminimum 60
+    ymaximum 60
+
+    # Відступи тексту всередині кнопки (критично важливо для висоти 60 px)
+    xpadding 30     # якщо текст довгий — збільш до 40–50
+    ypadding 10     # для висоти 60 px — 8–15 px, щоб текст не торкався верху/низу
+
+    xalign 0.5
+    yalign 0.5
+
+
+style glass_button_text:
+    color "#ffffffff"
+    hover_color "#e0f8ff"
+    selected_color "#cceeff"
+    insensitive_color "#888888cc"
+
+## ────────────────────────────────────────────────
+## Стиль скляних кнопок (використовуємо одну PNG для всіх станів)
+## ────────────────────────────────────────────────
+
+style glass_button:
+    background Frame("gui/glass_button.png", 0, 0)   
+    hover_background Frame("gui/glass_button.png", 0, 0)
+
+    # ТОЧНІ РОЗМІРИ КНОПКИ = РОЗМІРУ PNG
+    xsize 340
+    ysize 60
+
+    xminimum 340
+    xmaximum 340
+    yminimum 60
+    ymaximum 60
+
+    # Відступи тексту всередині кнопки (критично важливо для висоти 60 px)
+    xpadding 30    
+    ypadding 10    
+
+    xalign 0.5
+    yalign 0.5
+
+
+style glass_button_text:
+    color "#ffffffff"
+    hover_color "#e0f8ff"
+    selected_color "#cceeff"
+    insensitive_color "#888888cc"
+
+## ────────────────────────────────────────────────
+## Екран навігації (кнопки в головному меню)
+## ────────────────────────────────────────────────
+
 screen navigation():
 
     if renpy.get_screen("main_menu"):
@@ -298,9 +364,9 @@ screen navigation():
             yalign 0.5
             spacing gui.navigation_spacing
 
-            textbutton _("Почати") action Start()
-            textbutton _("Завантажити") action ShowMenu("load")
-            textbutton _("Налаштування") action ShowMenu("preferences")
+            textbutton _("Почати")       action Start()                    style "glass_button"
+            textbutton _("Завантажити")  action ShowMenu("load")           style "glass_button"
+            textbutton _("Налаштування") action ShowMenu("preferences")    style "glass_button"
 
         # ПРАВА КОЛОНКА
         vbox:
@@ -309,58 +375,14 @@ screen navigation():
             yalign 0.5
             spacing gui.navigation_spacing
 
-            textbutton _("Про гру") action ShowMenu("about")
-            textbutton _("Довідка") action ShowMenu("help")
-            textbutton _("Вийти") action Quit(confirm=True)
-
-style navigation_button is gui_button
-style navigation_button_text is gui_button_text
-
-style navigation_button:
-    size_group "navigation"
-    properties gui.button_properties("navigation_button")
-
-style navigation_button_text:
-    properties gui.text_properties("navigation_button")
+            textbutton _("Про гру") action ShowMenu("about")   style "glass_button"
+            textbutton _("Довідка") action ShowMenu("help")    style "glass_button"
+            textbutton _("Вийти")   action Quit(confirm=True)  style "glass_button"
 
 
-## Екран головного меню ########################################################
-##
-## Використовується для показу головного меню під час запуску Ren'Py.
-##
-## https://www.renpy.org/doc/html/screen_special.html#main-menu
-
-screen main_menu():
-
-    ## Гарантує, що будь-який інший екран меню буде замінено.
-    tag menu
-
-    add gui.main_menu_background
-
-    ## Ця порожня рамка затемнює головне меню.
-    frame:
-        style "main_menu_frame"
-    frame:
-        style "main_menu_frame_left"
-
-
-
-
-    ## Оператор "use" включає інший екран усередині цього. Фактичний уміст
-    ## головного меню знаходиться на екрані навігації.
-    use navigation
-
-    if gui.show_name:
-
-        vbox:
-            style "main_menu_vbox"
-
-            text "[config.name!t]":
-                style "main_menu_title"
-
-            text "[config.version]":
-                style "main_menu_version"
-
+## ────────────────────────────────────────────────
+## СТИЛІ ГОЛОВНОГО МЕНЮ
+## ────────────────────────────────────────────────
 
 style main_menu_frame is empty
 style main_menu_vbox is vbox
@@ -369,31 +391,52 @@ style main_menu_title is main_menu_text
 style main_menu_version is main_menu_text
 
 style main_menu_frame_left:
-    xsize 420          # ширина
-    yfill True         # растягивается по высоте
-    xalign 0.0         # прижатие к левому краю
+    xsize 420
+    yfill True
+    xalign 0.0
     background "gui/overlay/main_menu.png"
+
 style main_menu_frame:
     xsize 420
     yfill True
     xalign 1.0
     background "gui/overlay/main_menu.png"
 
-style main_menu_vbox:
-    xalign 1.0
-    xoffset -30
-    xmaximum 1200
-    yalign 1.0
-    yoffset -30
 
-style main_menu_text:
-    properties gui.text_properties("main_menu", accent=True)
+## ────────────────────────────────────────────────
+## ГОЛОВНЕ МЕНЮ
+## ────────────────────────────────────────────────
 
-style main_menu_title:
-    properties gui.text_properties("title")
+screen main_menu():
+    tag menu
 
-style main_menu_version:
-    properties gui.text_properties("version")
+    
+    add gui.main_menu_background
+
+
+    frame:
+        style "main_menu_frame_left"
+
+ 
+    frame:
+        style "main_menu_frame"
+
+   
+    use navigation
+
+  
+    if gui.show_name:
+        vbox:
+            style "main_menu_vbox"
+            xalign 0.5
+            yalign 0.3
+
+            text "[config.name!t]":
+                style "main_menu_title"
+
+            text "[config.version]":
+                style "main_menu_version"
+
 
 
 ## Екран ігрового меню #########################################################
@@ -419,7 +462,7 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
 
         hbox:
 
-            ## Місце для розділу навігації.
+            
             frame:
                 style "game_menu_navigation_frame"
 

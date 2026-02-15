@@ -368,7 +368,7 @@ screen navigation():
         # ПРАВА КОЛОНКА
         vbox:
             xalign 1.0
-            xoffset -60
+            xoffset 60
             yalign 0.5
             spacing gui.navigation_spacing
 

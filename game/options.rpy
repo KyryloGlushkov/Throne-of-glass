@@ -48,7 +48,7 @@ define build.name = "Throneofglass"
 
 define config.has_sound = True
 define config.has_music = True
-define config.has_voice = True
+define config.has_voice = False
 
 
 ## Щоб дозволити користувачеві відтворювати тестовий звук на звуковому або

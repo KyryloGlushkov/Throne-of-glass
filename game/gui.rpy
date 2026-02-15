@@ -65,7 +65,7 @@ define gui.text_font = "DejaVuSans.ttf"
 define gui.name_text_font = "DejaVuSans.ttf"
 
 ## Шрифт для тексту поза грою.
-define gui.interface_text_font = "DejaVuSans.ttf"
+define gui.interface_text_font = "gui/Monotype-Corsiva-Regular.ttf"
 
 ## Розмір звичайного тексту діалогу.
 define gui.text_size = 33
@@ -74,7 +74,7 @@ define gui.text_size = 33
 define gui.name_text_size = 45
 
 ## Розмір тексту в інтерфейсі гри.
-define gui.interface_text_size = 33
+define gui.interface_text_size = 40
 
 ## Розмір міток в інтерфейсі гри.
 define gui.label_text_size = 36
@@ -89,7 +89,7 @@ define gui.title_text_size = 75
 ## Головне меню та меню гри ####################################################
 
 ## Зображення, використані для головного меню і меню гри.
-define gui.main_menu_background = "images/menuonelove.jpg"
+define gui.main_menu_background = "images/menuonelove1.jpg"
 define gui.game_menu_background = "gui/game_menu.png"
 
 

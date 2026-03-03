@@ -1,17 +1,106 @@
-﻿## Визначення персонажів
-define c  = Character("Селена",          color="#c8ffc8")
-define pr = Character("Принц Доріан",    color="#c8c8ff")
-define g  = Character("Герцог Перрантон", color="#ffc8c8")
-define k  = Character("Капітан Єстфол",  color="#c8c8c8")
+﻿init python:
 
-define ka = Character("Кальтена", color="#ffc8a8")
-define n  = Character("Нехемія",  color="#c8a8ff")
-define d  = Character("Дорін",    color="#a8a8ff")
+    renpy.register_shader("name.gradient", variables="""
+        uniform vec4 u_left;
+        uniform vec4 u_right;
+        uniform vec2 u_model_size;
+        varying float v_done;
+        attribute vec4 a_position;
+    """,
+
+    vertex_300="""
+        v_done = a_position.x / u_model_size.x;
+    """,
+
+    fragment_300="""
+        gl_FragColor *= mix(u_left, u_right, v_done);
+    """)
+
+
+
+
+transform grad_selena:
+    shader "name.gradient"
+    u_left (0.0, 0.65, 0.2, 1.0)   
+    u_right (1.0, 1.0, 1.0, 1.0)   
+
+transform grad_dorin:
+    shader "name.gradient"
+    u_left (0.4, 0.6, 1.0, 1.0)
+    u_right (1.0, 1.0, 1.0, 1.0)
+
+transform grad_duke:
+    shader "name.gradient"
+    u_left (1.0, 0.6, 0.2, 1.0)
+    u_right (1.0, 1.0, 1.0, 1.0)
+
+transform grad_kalt:
+    shader "name.gradient"
+    u_left (0.1, 0.1, 0.1, 1.0)
+    u_right (1.0, 1.0, 1.0, 1.0)
+
+transform grad_captain:
+    shader "name.gradient"
+    u_left (0.5, 0.3, 0.1, 1.0)
+    u_right (1.0, 1.0, 1.0, 1.0)
+
+transform grad_nehemia:
+    shader "name.gradient"
+    u_left (1.0, 0.9, 0.2, 1.0)
+    u_right (1.0, 1.0, 1.0, 1.0)
+
+
+
+
+define c  = Character("Селена")
+define pr  = Character("Принц Дорін")
+define g  = Character("Герцог Перрантон")
+define ka = Character("Кальтена")
+define k  = Character("Капітан Єстфол")
+define n  = Character("Нехемія")
+
+
+
+style name_grad_common is namebox:
+    font "Indira_K.ttf"
+    size 40
+
+
+
+
+screen say(who, what):
+
+    window:
+        id "window"
+
+        if who is not None:
+
+            window:
+                id "namebox"
+
+                if who == "Селена":
+                    text who style "name_grad_common" at grad_selena
+                elif who == "Принц Дорін":
+                    text who style "name_grad_common" at grad_dorin
+                elif who == "Герцог Перрантон":
+                    text who style "name_grad_common" at grad_duke
+                elif who == "Кальтена":
+                    text who style "name_grad_common" at grad_kalt
+                elif who == "Капітан Єстфол":
+                    text who style "name_grad_common" at grad_captain
+                elif who == "Нехемія":
+                    text who style "name_grad_common" at grad_nehemia
+                else:
+                    text who style "name_grad_common"
+
+        text what id "what"
+
+
 
 
 label start:
-
-    scene bg room
+    stop music fadeout 1.0
+    scene коридорпалацу
     with fade
 
     "Коридори палацу здавалися нескінченними. Кам’яні стіни відбивали кожен звук, і навіть тихе клацання кроків лунало, наче удари молота."
@@ -19,6 +108,7 @@ label start:
     "Попри лахміття й сліди копалень на обличчі, у її очах жевріла грізна сила, яка змушувала охоронців відводити погляд."
 
     k "Тримайся рівно. Принц не любить слабкості."
+    show селена at right
     c "Я не слабка."
     k "Побачимо."
 

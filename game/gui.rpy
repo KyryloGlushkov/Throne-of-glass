@@ -26,7 +26,7 @@ define config.check_conflicting_properties = True
 ## Кольори тексту в інтерфейсі.
 
 ## Акцентний колір інтерфейсу для позначення і підсвічування тексту.
-define gui.accent_color = '#9933ff'
+define gui.accent_color = "#ffffff"
 
 ## Колір текстової кнопки, коли її не вибрано і не наведено вказівником.
 define gui.idle_color = '#888888'
@@ -59,13 +59,13 @@ define gui.interface_text_color = '#ffffff'
 ## Шрифти та розміри шрифтів ###################################################
 
 ## Шрифт для тексту в грі.
-define gui.text_font = "DejaVuSans.ttf"
+define gui.text_font = "fonts/Indira_K.ttf"
 
 ## Шрифт для імен персонажів.
-define gui.name_text_font = "DejaVuSans.ttf"
+define gui.name_text_font = "fonts/gotic.ttf"
 
 ## Шрифт для тексту поза грою.
-define gui.interface_text_font = "gui/Monotype-Corsiva-Regular.ttf"
+define gui.interface_text_font = "fonts/Monotype-Corsiva-Regular.ttf"
 
 ## Розмір звичайного тексту діалогу.
 define gui.text_size = 33

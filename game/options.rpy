@@ -64,8 +64,8 @@ define config.has_voice = False
 ## відтворюватися у грі, доки його не буде зупинено або не буде відтворено інший
 ## файл.
 
-# define config.main_menu_music = "main-menu-theme.ogg"
-
+define config.main_menu_music = "audio/main_menu theme.mp3"
+stop music fadeout 1000
 
 ## Переходи ####################################################################
 ##

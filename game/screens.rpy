@@ -151,7 +151,8 @@ style say_label:
     properties gui.text_properties("name", accent=True)
     xalign gui.name_xalign
     yalign 0.5
-
+    color None  # Обов'язково! Щоб who_transform градієнт спрацював
+    bold False 
 style say_dialogue:
     properties gui.text_properties("dialogue")
 
@@ -344,7 +345,7 @@ style glass_button_text:
     hover_color "#e0f8ff"
     selected_color "#cceeff"
     insensitive_color "#888888cc"
-    font "gui/Monotype-Corsiva-Regular.ttf"      
+    font "fonts/Monotype-Corsiva-Regular.ttf"      
 
 ## ────────────────────────────────────────────────
 ## Екран навігації (кнопки в головному меню)

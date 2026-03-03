@@ -108,15 +108,56 @@ transform grad_nehemia:
     u_left (1.0, 0.9, 0.2, 1.0)
     u_right (1.0, 1.0, 1.0, 1.0)
 
+transform grad_falipa:
+    shader "name.gradient"
+    u_left (0.5, 0.0, 0.0, 1.0)
+    u_right (1.0, 1.0, 1.0, 1.0)
 
+transform grad_guard:
+    shader "name.gradient"
+    u_left (0.6, 0.6, 0.6, 1.0)
+    u_right (1.0, 1.0, 1.0, 1.0)
+    
+transform grad_king:
+    shader "name.gradient"
+    u_left (0.0, 0.1, 0.45, 1.0)
+    u_right (1.0, 1.0, 1.0, 1.0)
+    
+transform grad_companion:
+    shader "name.gradient"
+    u_left (0.7, 0.7, 0.7, 1.0)
+    u_right (1.0, 1.0, 1.0, 1.0)
 
+transform grad_kain:
+    shader "name.gradient"
+    u_left (0.5, 0.0, 0.7, 1.0)
+    u_right (1.0, 1.0, 1.0, 1.0)
+
+transform grad_brullo:
+    shader "name.gradient"
+    u_left (0.35, 0.35, 0.35, 1.0)
+    u_right (1.0, 1.0, 1.0, 1.0)
+
+transform grad_xavier:
+    shader "name.gradient"
+    u_left (0.58, 0.44, 0.86, 1.0)
+    u_right (1.0, 1.0, 1.0, 1.0)
 
 define c  = Character("Селена")
 define pr  = Character("Принц Дорін")
 define g  = Character("Герцог Перрантон")
 define ka = Character("Кальтена")
-define k  = Character("Капітан Єстфол")
+define sh  = Character("Капітан Єстфол")
 define n  = Character("Нехемія")
+define gv1  = Character("Гвардієць 1")
+define gv2  = Character("Гвардієць 2")
+define f  = Character("Фаліпа")
+define ke  = Character("Кейн")
+define b  = Character("Брулло")
+define ks  = Character("Ксав'єр")
+define K  = Character("Король")
+define spk1  = Character("Спутниця 1")
+define spk2  = Character("Спутниця 2")
 
 
 
@@ -139,21 +180,48 @@ screen say(who, what):
 
                 if who == "Селена":
                     text who style "name_grad_common" at grad_selena
+
                 elif who == "Принц Дорін":
                     text who style "name_grad_common" at grad_dorin
+
                 elif who == "Герцог Перрантон":
                     text who style "name_grad_common" at grad_duke
+
                 elif who == "Кальтена":
                     text who style "name_grad_common" at grad_kalt
+
                 elif who == "Капітан Єстфол":
                     text who style "name_grad_common" at grad_captain
+
                 elif who == "Нехемія":
                     text who style "name_grad_common" at grad_nehemia
+
+
+                elif who == "Гвардієць 1" or who == "Гвардієць 2":
+                    text who style "name_grad_common" at grad_guard
+
+                elif who == "Фаліпа":
+                    text who style "name_grad_common" at grad_falipa
+
+                elif who == "Король":
+                    text who style "name_grad_common" at grad_king
+
+                elif who == "Спутниця 1" or who == "Спутниця 2":
+                    text who style "name_grad_common" at grad_companion
+
+                elif who == "Кейн":
+                    text who style "name_grad_common" at grad_kain
+
+                elif who == "Брулло":
+                    text who style "name_grad_common" at grad_brullo
+
+                elif who == "Ксав'єр":
+                    text who style "name_grad_common" at grad_xavier
+
                 else:
                     text who style "name_grad_common"
 
         text what id "what"
-
 
 
 
@@ -169,7 +237,7 @@ label start:
     k "Тримайся рівно. Принц не любить слабкості."
     show селена at right
     c "Я не слабка."
-    k "Побачимо."
+    sh "Побачимо."
 
     "Вони зупинилися перед високими дверима, прикрашеними золотими візерунками. Двері відчинилися, і світло тронної зали залило простір."
 
@@ -232,7 +300,7 @@ label start:
 
     pr "Мені про це не казали."
 
-    k "Через чотири місяці вона спробувала втекти."
+    sh "Через чотири місяці вона спробувала втекти."
 
     c "Це не найкраща частина історії."
 

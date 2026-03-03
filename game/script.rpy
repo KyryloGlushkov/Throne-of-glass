@@ -17,7 +17,7 @@
         skip until "main_menu"
         assert screen "main_menu"
 
-    testcase nain_menu_ui_test:
+    testcase main_menu_ui_test:
         click "Завантажити"
         assert screen "load"
         click "Повернутися"
@@ -56,6 +56,17 @@
         assert screen "save"
         click "Повернутися"
         assert screen "say"
+
+    testcase fail_ui_test:
+        xfail True
+        click "Завантажити"
+        assert screen "load"
+
+        click "Налаштування"
+        assert screen "preferences"
+        click "Повернутися"
+
+        assert screen "main_menu"
 
 init python:
 

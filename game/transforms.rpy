@@ -6,6 +6,11 @@ transform size_shaol:
     ysize 970
     fit "contain"
 
+transform size_guard:
+    ysize 1300
+    fit "contain"
+    yalign -0.2
+
 transform right:
     xalign 0.9
     yalign 1.0

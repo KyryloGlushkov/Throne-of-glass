@@ -1,23 +1,27 @@
 ﻿init python:
+ 
+    renpy.register_shader("name.gradient",
+        variables="""
+            uniform vec4 u_left;
+            uniform vec4 u_right;
+            uniform vec2 u_model_size;
+            varying float v_done;
+            attribute vec4 a_position;
+        """,
 
-    renpy.register_shader("name.gradient", variables="""
-        uniform vec4 u_left;
-        uniform vec4 u_right;
-        uniform vec2 u_model_size;
-        varying float v_done;
-        attribute vec4 a_position;
-    """,
+        vertex_300="""
+            v_done = a_position.x / u_model_size.x;
+        """,
 
-    vertex_300="""
-        v_done = a_position.x / u_model_size.x;
-    """,
-
-    fragment_300="""
-        gl_FragColor *= mix(u_left, u_right, v_done);
-    """)
+        fragment_300="""
+            gl_FragColor *= mix(u_left, u_right, v_done);
+        """
+    )
 
 
-
+# ────────────────────────────────────────────────
+# Трансформи градієнту імені (без змін)
+# ────────────────────────────────────────────────
 transform grad_selena:
     shader "name.gradient"
     u_left (0.0, 0.65, 0.2, 1.0)   
@@ -83,29 +87,62 @@ transform grad_xavier:
     u_left (0.58, 0.44, 0.86, 1.0)
     u_right (1.0, 1.0, 1.0, 1.0)
 
-define c  = Character("Селена")
-define pr  = Character("Принц Дорін")
-define g  = Character("Герцог Перрантгон")
-define ka = Character("Кальтена")
-define sh  = Character("Капітан Єстфол")
-define n  = Character("Нехемія")
-define gv1  = Character("Гвардієць 1")
-define gv2  = Character("Гвардієць 2")
-define f  = Character("Фаліпа")
-define ke  = Character("Кейн")
-define b  = Character("Брулло")
-define ks  = Character("Ксав'єр")
-define K  = Character("Король")
-define spk1  = Character("Спутниця 1")
-define spk2  = Character("Спутниця 2")
+
+# ────────────────────────────────────────────────
+# НОВЕ: плавна поява та зникнення персонажів
+# ────────────────────────────────────────────────
+transform appear_fade:
+    alpha 0.0
+    linear 0.35 alpha 1.0   # 0.35 секунди — комфортний час
+
+transform disappear_fade:
+    linear 0.35 alpha 0.0   # плавне зникнення за 0.35 секунди
 
 
+# ────────────────────────────────────────────────
+# Персонажі (без змін)
+# ────────────────────────────────────────────────
+define c   = Character("Селена",   callback=name_callback, cb_name="селена")
+define pr  = Character("Принц Дорін", callback=name_callback, cb_name="дорін")
+define g   = Character("Герцог Перрантгон", callback=name_callback, cb_name="перрантгон")
+define ka  = Character("Кальтена", callback=name_callback, cb_name="кальтена")
+define sh  = Character("Капітан Єстфол", callback=name_callback, cb_name="шаол")
+define n   = Character("Нехемія", callback=name_callback, cb_name="нехемія")
+define f   = Character("Фаліпа", callback=name_callback, cb_name="фаліпа")
+define ke  = Character("Кейн", callback=name_callback, cb_name="кейн")
+define b   = Character("Брулло", callback=name_callback, cb_name="брулло")
+define ks  = Character("Ксав'єр", callback=name_callback, cb_name="ксав'єр")
+define K   = Character("Король", callback=name_callback, cb_name="король")
+define gv1 = Character("Гвардієць 1", callback=name_callback, cb_name="гвардієць1")
+define gv2 = Character("Гвардієць 2", callback=name_callback, cb_name="гвардієць2")
+define spk1 = Character("Спутниця 1", callback=name_callback, cb_name="спутниця1")
+define spk2 = Character("Спутниця 2", callback=name_callback, cb_name="спутниця2")
 
+
+# ────────────────────────────────────────────────
+# Зображення з обгорткою sprite_highlight (без змін)
+# ────────────────────────────────────────────────
+image селена = At("images/селена.png", sprite_highlight("селена"))
+image дорін = At("images/Дорін.png",   sprite_highlight("дорін"))
+image шаол = At("images/Шаол.png", sprite_highlight("шаол"))
+image кальтена = At("images/Кальтена.png", sprite_highlight("кальтена"))
+image перрантгон = At("images/Перрантгон.png", sprite_highlight("перрантгон"))
+image нехемія = At("images/Нехемія.png", sprite_highlight("нехемія"))
+image фаліпа  = At("images/Фаліпа.png", sprite_highlight("фаліпа"))
+image кейн   = At("images/Кейн.png",   sprite_highlight("кейн"))
+image король = At("images/Король.png",   sprite_highlight("король"))
+image спутниця1 = At("images/Спутниця1.png",   sprite_highlight("спутниця1"))
+image спутниця2 = At("images/Спутниця2.png",   sprite_highlight("спутниця2"))
+image гвардієць1   = At("images/Гвардієць1.png",   sprite_highlight("гвардієць1"))
+image гвардієць2  = At("images/Гвардієць2.png",   sprite_highlight("гвардієць2"))
+
+
+# ────────────────────────────────────────────────
+# Стиль та екран say (без змін)
+# ────────────────────────────────────────────────
 style name_grad_common is namebox:
     font "Indira_K.ttf"
     size 40
-
-
 
 screen say(who, what):
 
@@ -134,7 +171,6 @@ screen say(who, what):
 
                 elif who == "Нехемія":
                     text who style "name_grad_common" at grad_nehemia
-
 
                 elif who == "Гвардієць 1" or who == "Гвардієць 2":
                     text who style "name_grad_common" at grad_guard
@@ -170,20 +206,20 @@ label start:
 "Коридори палацу здавалися нескінченними. Кам’яні стіни відбивали кожен звук, і навіть тихе клацання кроків лунало, наче удари молота."
 "Селену вели вперед. Її руки були скуто, але голова піднята високо — вона не дозволяла собі виглядати зламаною."
 "Попри лахміття й сліди копалень на обличчі, у її очах жевріла грізна сила, яка змушувала охоронців відводити погляд."
-show шаол at right, size_shaol
+show шаол at right, size_shaol 
 sh "Тримайся рівно. Принц не любить слабкості."
-show селена at left, size_selena
+show селена at left, size_selena 
 c "Я не слабка."
 sh "Побачимо."
-hide селена
+hide селена 
 hide шаол
 "Вони зупинилися перед високими дверима, прикрашеними золотими візерунками. Двері відчинилися, і світло тронної зали залило простір."#
 "На підвищенні сидів принц Дорін. Його погляд був уважний, але сповнений цікавості — він розглядав ту, про кого чув легенди."
 "Поруч стояв герцог Перрантгон, його усмішка була холодною, а очі — пильними, наче він оцінював здобич."
-show селена at left, size_selena
-show дорін at right
+show селена at left, size_selena 
+show дорін at right 
 pr "Отже, це й є Селена Сардотін."
-hide селена
+hide селена 
 hide дорін
 "Принц кинув короткий погляд на капітана Єстфола."
 show селена at left, size_selena

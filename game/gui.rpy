@@ -62,7 +62,7 @@ define gui.interface_text_color = '#ffffff'
 define gui.text_font = "fonts/Indira_K.ttf"
 
 ## Шрифт для імен персонажів.
-define gui.name_text_font = "fonts/gotic.ttf"
+define gui.name_text_font = ""
 
 ## Шрифт для тексту поза грою.
 define gui.interface_text_font = "fonts/Monotype-Corsiva-Regular.ttf"

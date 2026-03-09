@@ -200,199 +200,202 @@ sh "Тримайся рівно. Принц не любить слабкості
 show селена at left, size_selena, appear_fade
 c "Я не слабка."
 sh "Побачимо."
-hide селена 
-hide шаол
+show селена at left, size_selena, disappear_fade
+show шаол at right, size_shaol, disappear_fade 
 "Вони зупинилися перед високими дверима, прикрашеними золотими візерунками. Двері відчинилися, і світло тронної зали залило простір."#
 "На підвищенні сидів принц Дорін. Його погляд був уважний, але сповнений цікавості — він розглядав ту, про кого чув легенди."
 "Поруч стояв герцог Перрантгон, його усмішка була холодною, а очі — пильними, наче він оцінював здобич."
-show селена at left, size_selena 
-show дорін at right 
+show селена at left, size_selena, appear_fade 
+show дорін at right, appear_fade 
 pr "Отже, це й є Селена Сардотін."
-hide селена 
-hide дорін
+show селена at left, size_selena, disappear_fade
+show дорін at right, disappear_fade 
 "Принц кинув короткий погляд на капітана Єстфола."
-show селена at left, size_selena
-show дорін at right
+show селена at left, size_selena, appear_fade 
+show дорін at right, appear_fade 
 pr "Я ж наказував привести її в належному вигляді. Чому вона досі в лахмітті?"
-hide дорін
-show шаол at right, size_shaol
+show дорін at right, disappear_fade
+show шаол at right, size_shaol, appear_fade 
 sh "Вона відмовилася. До того ж я хотів привести її до вас якомога швидше."
 c "Я не річ, яку можна прикрасити для вашого задоволення."
-hide селена
-hide шаол
+show селена at left, size_selena, disappear_fade
+show шаол at right, size_shaol, disappear_fade 
 "Герцог Перрантгон тихо засміявся, але його сміх був більше схожий на шипіння."
-show селена at left, size_selena, 
-show дорін at right
+show селена at left, size_selena, appear_fade  
+show дорін at right, appear_fade 
 pr "Герцогу Перрантгону, ви вже зустрічалися з казначеєм Ендов’єра?"
-hide дорін
-show перрантгон at right
+show дорін at right, disappear_fade
+show перрантгон at right, appear_fade 
 g "…"
-hide селена
-hide перрантгон
+show селена at left, size_selena, disappear_fade
+show перрантгон at right, disappear_fade 
 "На мить його усмішка зникла, і він нахмурився, але все ж кивнув."
-show селена at left, size_selena
-show перрантгон at right
+show селена at left, size_selena, appear_fade 
+show перрантгон at right, appear_fade 
 g "Так, Ваша Високість. Я виконаю те, що ви просите."
-hide селена
-hide перрантгон
+show селена at left, size_selena, disappear_fade
+show перрантгон at right, disappear_fade 
 "Перрантгон зробив легкий уклін і, не приховуючи роздратування, покинув залу."
 "Коли двері зачинилися, Дорін відкинувся вперед, сперся ліктями на коліна й уважно подивився на Селену."
-show селена at left, size_selena
-show дорін at right
+show селена at left, size_selena, appear_fade 
+show дорін at right, appear_fade 
 pr "Ти виглядаєш молодшою, ніж я очікував."
 pr "Про тебе розповідають неймовірні історії."
 pr "Скажи, як тобі Ендов’єр після такої запаморочливої долі, яку ти мала в Рафтхолі?"
-hide селена
-hide дорін
+show селена at left, size_selena, disappear_fade 
+show дорін at right, disappear_fade 
 "«Напищений індик», — подумала Селена."
-show селена at left, size_selena
-show дорін at right
+show селена at left, size_selena, appear_fade 
+show дорін at right, appear_fade 
 c "Неможливо уявити більше щастя."
 pr "Після року в копальнях ти не втратила живості. Це дивує. Зазвичай там витримують місяць."
 c "Сама дивуюся цій загадці."
-hide селена
-hide дорін
+show селена at left, size_selena, disappear_fade 
+show дорін at right, disappear_fade 
 "Вона опустила погляд і поправила кайдани, наче це були мереживні рукавички."
-show селена at left, size_selena
-show дорін at right
+show селена at left, size_selena, appear_fade 
+show дорін at right, appear_fade 
 pr "У неї гострий язик, — усміхнувся принц до капітана. — І говорить правильно, не як простий сброд."
 c "Сподіваюся, — буркнула Селена."
-hide дорін
-show шаол at right
+show дорін at right, disappear_fade 
+show шаол at right, size_shaol, appear_fade 
 sh "При зверненні до принца додавай «ваше високість»."
-hide селена
-hide шаол
+show селена at left, size_selena, disappear_fade 
+show шаол at right, size_shaol, disappear_fade 
 "Селена відповіла йому усмішкою й знову повернулася до Доріна. Той засміявся."
-show селена at left, size_selena
-show дорін at right
+show селена at left, size_selena, appear_fade 
+show дорін at right, appear_fade 
 pr "Ти знаєш, що тут рабиня. Приговор нічого тебе не навчив?"
 c "Копальня вчить лише тримати кирку."
 pr "І ти жодного разу не намагалась утекти?"
 c "Один раз."
 pr "Мені про це не казали."
-hide дорін
-show шаол at right, size_shaol
+show дорін at right, disappear_fade
+show шаол at right, size_shaol, appear_fade
 sh "Через чотири місяці вона спробувала втекти."
 c "Це не найкраща частина історії."
-hide шаол
-show дорін at right
+show шаол at right, size_shaol, disappear_fade 
+show дорін at right, appear_fade 
 pr "А яка ж найкраща?"
-hide дорін
-show шаол at right, size_shaol
+show дорін at right, disappear_fade
+show шаол at right, size_shaol, appear_fade 
 sh "Ваше високість, втеча з Ендов’єра — самогубство. Але вона вижила."
 c "Так, — тихо сказала Селена."
-hide шаол
-show дорін at right
+show шаол at right, size_shaol, disappear_fade 
+show дорін at right, appear_fade 
 pr "Що ж тобі завадило?"
 c "Гілка хруснула під ногою."
-hide дорін
-show шаол at right, size_shaol
+show дорін at right, disappear_fade
+show шаол at right, size_shaol, appear_fade 
 sh "Перед тим вона вбила наглядача й двадцять три стражники. Її перехопили біля стіни."
 c "Від моєї шахти до стіни — триста шістдесят три фути. Я рахувала."
 sh "Зазвичай втікач не проходить і трьох футів."
-hide шаол
-show дорін at right
+show шаол at right, size_shaol, disappear_fade 
+show дорін at right, appear_fade 
 pr "Тебе могли вбити. Чому ж залишили живою?"
 c "Король наказав, щоб я пройшла всі жахи Ендов’єра."
 c "Я й не збиралась тікати, — прошепотіла вона."
 pr "У тебе багато шрамів?"
-hide дорін
-hide селена
+show дорін at right, disappear_fade
+show селена at left, size_selena, disappear_fade 
 "Селена знизала плечима. Принц підійшов ближче."
-show селена at left, size_selena
-show дорін at right
+show селена at left, size_selena, appear_fade 
+show дорін at right, appear_fade 
 pr "Тут лише бруд. І запах жахливий!"
 c "А як інакше пахнути, якщо я забула, коли востаннє милася? Вибачте… ваше високість."
-hide дорін
-hide селена
+show дорін at right, disappear_fade
+show селена at left, size_selena, disappear_fade 
 "Принц обійшов її, розглядаючи. Стражники напружилися."
-show селена at left, size_selena
-show дорін at right
+show селена at left, size_selena, appear_fade 
+show дорін at right, appear_fade 
 pr "Я бачу кілька шрамів, але думав, що буде гірше. Це сховають сукні."
 c "Сукні?"
 pr "У тебе чудові очі. І які ж вони злі!"
-hide дорін
-hide селена
+show дорін at right, disappear_fade
+show селена at left, size_selena, disappear_fade 
 "Селена ледь стримувалася, щоб не кинутися на нього. Капітан різко відтягнув її назад."
-show селена at left, size_selena
-show шаол at right, size_shaol
+show селена at left, size_selena, appear_fade 
+show шаол at right, size_shaol, appear_fade 
 c "Полегше! Я не збиралася вбивати принца."
 sh "Думай, що кажеш, інакше поверну тебе в копальні!"
 c "Не зробиш цього. Бо вам обом від мене щось потрібно. Ви перевіряли мене, чи я не зламалася. Але я жива й при розумі. Тож скажіть, навіщо я тут і що вам від мене треба?"
+show селена at left, size_selena, disappear_fade
+show шаол at right, size_shaol, disappear_fade
 "Принц і капітан переглянулися."
-hide шаол
-show дорін at right
+show селена at left, size_selena, appear_fade 
+show шаол at right, size_shaol, disappear_fade 
+show дорін at right, appear_fade 
 pr "Є до тебе одна пропозиція."
 c "Слухаю."
-hide дорін
-hide селена
+show дорін at right, disappear_fade
+show селена at left, size_selena, disappear_fade 
 
 #Епізод 2
 
 "Принц Дорін повільно підвівся з трону."
-show селена at left, size_selena
-show дорін at right
+show селена at left, size_selena, appear_fade 
+show дорін at right, appear_fade 
 pr "Тобі пропонують шанс, Селено Сардотін. Змагання за титул Чемпіона короля."
 c "Я чула про це. Двадцять чотири вбивці, злодії, найманці. Один виходить живим. Інші — трупи."
 pr "Саме так. Переможець служить королю чотири роки. Потім — повна свобода. Гроші. Земля. Ім’я, яке знову матиме вагу."
-hide дорін
-hide селена
+show дорін at right, disappear_fade
+show селена at left, size_selena, disappear_fade 
 "Селена повільно крутила кайдани на зап’ястях."
-show селена at left, size_selena
-show дорін at right
+show селена at left, size_selena, appear_fade 
+show дорін at right, appear_fade 
 c "А якщо я скажу «ні»?"
 pr "Тоді завтра на світанку тебе повезуть назад. До Ендов’єра. До тієї самої шахти."
 c "Гарно сказано. Ви просто хочете подивитися, як швидко я зламаюся остаточно."
-hide дорін
-hide селена
+show дорін at right, disappear_fade
+show селена at left, size_selena, disappear_fade 
 "Дорін усміхнувся — не глузливо, а майже з цікавістю."
-show селена at left, size_selena
-show дорін at right
+show селена at left, size_selena, appear_fade 
+show дорін at right, appear_fade 
 pr "Ні. Я хочу побачити, чи ти дійсно та, про кого шепочуться. Та, що вбила двадцять три охоронці за одну ніч. Та, що рахувала кожен фут до стіни."
 pr "Ти отримаєш їжу. Гарячу воду щодня. Ліжко. Кімнату з дверима, які зачиняються зсередини. Тренування. Зброю. І — шанс."
-hide дорін
-hide селена
+show дорін at right, disappear_fade
+show селена at left, size_selena, disappear_fade 
 "Селена мовчала довго. Потім тихо, майже пошепки:"
-show селена at left, size_selena
-show дорін at right
+show селена at left, size_selena, appear_fade 
+show дорін at right, appear_fade 
 c "Чотири роки. А якщо я виграю раніше?"
 pr "Ні. Чотири роки — обов’язково. Але після них — ти вільна. Я даю слово."
-hide дорін
-hide селена
+show дорін at right, disappear_fade
+show селена at left, size_selena, disappear_fade 
 "Вона підняла підборіддя."
-show селена at left, size_selena
-show дорін at right
+show селена at left, size_selena, appear_fade 
+show дорін at right, appear_fade 
 c "Слово принца. Воно багато важить у цьому палаці?"
-hide дорін
-hide селена
+show дорін at right, disappear_fade
+show селена at left, size_selena, disappear_fade 
 "Дорін підійшов ближче — настільки, що вона відчула легкий аромат сандалу."
-show селена at left, size_selena
-show дорін at right
+show селена at left, size_selena, appear_fade 
+show дорін at right, appear_fade 
 pr "Моє слово важить саме стільки, скільки я захочу."
-hide дорін
-hide селена
+show дорін at right, disappear_fade
+show селена at left, size_selena, disappear_fade 
 "Селена дивилася йому прямо в очі. Довго. Потім видихнула."
-show селена at left, size_selena
-show дорін at right
+show селена at left, size_selena, appear_fade 
+show дорін at right, appear_fade 
 c "Гаразд. Я згодна."
-hide дорін
-hide селена
+show дорін at right, disappear_fade
+show селена at left, size_selena, disappear_fade 
 "Принц кивнув капітанові."
-show селена at left, size_selena
-show дорін at right
+show селена at left, size_selena, appear_fade 
+show дорін at right, appear_fade 
 pr "Відведи її. Нехай помиється. Дай нормальний одяг. І прослідкуй, щоб їй принесли їжу — справжню, не тюремну баланду."
-hide дорін
-show шаол at right, size_shaol
+show дорін at right, disappear_fade
+show шаол at right, size_shaol, appear_fade 
 sh "Так, Ваша Високість."
-hide шаол
-hide селена
+show шаол at right, size_shaol, disappear_fade 
+show селена at left, size_selena, disappear_fade 
 "Коли вони вже дійшли до дверей, Селена раптом зупинилася й обернулася."
-show селена at left, size_selena
-show дорін at right
+show селена at left, size_selena, appear_fade 
+show дорін at right, appear_fade 
 c "Принце, якщо я виграю ці змагання… ви точно пошкодуєте, що випустили мене з кайданів."
 pr "Можливо. Але я вже пошкодував би, якби не спробував."
-hide дорін
-hide селена
+show дорін at right, disappear_fade
+show селена at left, size_selena, disappear_fade 
 "Двері зачинилися з важким стуком."
 "Коли Селена нарешті впала на ліжко після зустрічі з принцом, сон не йшов. Тіло горіло від втоми, але біль і збудження не давали заснути."
 "Гаряча вода й мило стали справжньою тортурою. Дві кремезні служниці терли її так, ніби мали зішкребти до кісток. Шрами на спині палали вогнем, обличчя здавалося стертим до черепа."
@@ -405,19 +408,19 @@ hide селена
 "З цими думками вона заснула."
 
 "Вранці Шаол знайшов її на підлозі, закутану в ковдру."
-show шаол at right, size_shaol
+show шаол at right, size_shaol, appear_fade 
 sh "Ей, Сардотін, вставай!"
-hide шаол
+show шаол at right, size_shaol, disappear_fade 
 "Селена буркнула й зарилася в подушку."
-show шаол at right, size_shaol
+show шаол at right, size_shaol, appear_fade 
 sh "Чому на підлозі?"
-hide шаол
+show шаол at right, size_shaol, disappear_fade 
 "Вона розплющила одне око. Капітан навіть не коментував її вигляд — чисту, без бруду."
-show селена at left, size_selena
-show шаол at right, size_shaol
+show селена at left, size_selena, appear_fade 
+show шаол at right, size_shaol, appear_fade 
 c "Ліжко незручне."
-hide шаол
-hide селена
+show шаол at right, size_shaol, disappear_fade 
+show селена at left, size_selena, disappear_fade 
 "Вона підвелася. Нічна сорочка прикривала худе тіло. Сонячна смуга пробилася крізь штори. Селена простягнула руку — світло торкнулося блідої шкіри. Із того, що каторга не знищила, — вишуканість рухів."
 "Вона кинулася до вікна, ледь не зірвавши штори. За склом — сірі гори Ендов’єра, вартові внизу, що ніколи не дивляться в небо."
 "Голубувато-сіре небо. Повільні хмари. «Я не буду боятися». Ці слова вперше стали правдою. Селена усміхнулася. Шаол здивовано глянув, але промовчав."
@@ -433,30 +436,30 @@ hide селена
 "Породисті, з псарні принца. Оббігли Селену. Вона опустилася на коліно, погладила, почухала за вухами. Собаки лизали обличчя й пальці, махаючи тонкими хвостами."
 
 "Біля неї зупинилися чорні, майже ебенові чоботи. Собаки миттєво сіли. Селена підняла погляд — Дорін."
-show селена at left, size_selena
-show дорін at right
+show селена at left, size_selena, appear_fade 
+show дорін at right, appear_fade 
 pr "Мої собачки тебе прийняли. Чим ти їх підкупила?"
-hide дорін
-hide селена
+show селена at left, size_selena, disappear_fade 
+show дорін at right, disappear_fade 
 "Вона похитала головою."
-show селена at left, size_selena
-show дорін at right
+show селена at left, size_selena, appear_fade 
+show дорін at right, appear_fade 
 pr "Ти любиш собак?"
-hide дорін
-hide селена
+show селена at left, size_selena, disappear_fade 
+show дорін at right, disappear_fade 
 "Селена кивнула."
-show селена at left, size_selena
-show дорін at right
+show селена at left, size_selena, appear_fade 
+show дорін at right, appear_fade 
 pr "Я удостоюся відповіді голосом, чи ти мовчатимеш увесь шлях?"
 c "Ваші питання й так не потребують слів."
-hide дорін
-hide селена
+show селена at left, size_selena, disappear_fade 
+show дорін at right, disappear_fade 
 "Дорін нахилився й прошепотів:"
-show селена at left, size_selena
-show дорін at right
+show селена at left, size_selena, appear_fade 
+show дорін at right, appear_fade 
 pr "Тоді прийміть мої вибачення, пані Сардотін. Наступного разу придумаю цікавіші запитання."
-hide дорін
-hide селена
+show селена at left, size_selena, disappear_fade 
+show дорін at right, disappear_fade 
 "Він розвернувся й пішов. Собаки потрусили за ним."
 
 "Настрій зіпсувався. Селена помітила ухмилку Шаола — й захотіла когось розмазати по стіні. Їй підвели кобилу. Селена сіла в сідло. Небо стало ближчим."
@@ -475,20 +478,20 @@ hide селена
 "Легенди про жорстоких нащадків Відьомського королівства. Селена колись убила одну з них — кров текла так само."
 
 "Через кілька годин мовчання Селена заговорила:"
-show селена at left, size_selena
-show шаол at right, size_shaol
+show селена at left, size_selena, appear_fade 
+show шаол at right, size_shaol, appear_fade 
 c "Кажуть, після перемоги над Вендаліним король піде на західні землі."
-hide селена
-hide шаол
+show селена at left, size_selena, disappear_fade 
+show шаол at right, size_shaol, disappear_fade 
 "Шаол мовчав."
-show селена at left, size_selena
-show шаол at right, size_shaol
+show селена at left, size_selena, appear_fade 
+show шаол at right, size_shaol, appear_fade 
 c "Пустелі, жалюгідні гори. Нудно."
-hide селена
-hide шаол
+show селена at left, size_selena, disappear_fade 
+show шаол at right, size_shaol, disappear_fade 
 "Він стиснув зуби."
-show селена at left, size_selena
-show шаол at right, size_shaol
+show селена at left, size_selena, appear_fade 
+show шаол at right, size_shaol, appear_fade 
 c "Ти й далі мене ігноруватимеш?"
 
 sh "Я не знав, що ігнорую."
@@ -499,48 +502,48 @@ sh "А тобі?"
 c "Вісімнадцять."
 sh "Преступлення — не досягнення."
 c "А стати найвідомішою асасинкою — ще й яке!"
-hide селена
-hide шаол
+show селена at left, size_selena, disappear_fade 
+show шаол at right, size_shaol, disappear_fade 
 "Він мовчав."
-show селена at left, size_selena
-show шаол at right, size_shaol
+show селена at left, size_selena, appear_fade 
+show шаол at right, size_shaol, appear_fade 
 c "Хочеш знати, як я це зробила?"
 sh "Ні."
-hide селена
-hide шаол
+show селена at left, size_selena, disappear_fade 
+show шаол at right, size_shaol, disappear_fade 
 "Селена дратувалася. Хотіла або вразити, або розлютити."
 "Вона продовжувала:"
-show селена at left, size_selena
-show шаол at right, size_shaol
+show селена at left, size_selena, appear_fade 
+show шаол at right, size_shaol, appear_fade 
 c "Ти з принцом — близькі друзі?"
 sh "Не твоя справа."
 c "Знатного роду?"
 sh "Достатньо."
 c "Герцог?"
-hide селена
-hide шаол
+show селена at left, size_selena, disappear_fade 
+show шаол at right, size_shaol, disappear_fade 
 "Мовчанка."
-show селена at left, size_selena
-show шаол at right, size_shaol
+show селена at left, size_selena, appear_fade 
+show шаол at right, size_shaol, appear_fade 
 c "Предводитель Шаол Естфол?"
 sh "Не називай мене так. Титулу предводителя в мене немає."
 c "Скандал? Тебе позбавили?"
-hide селена
-hide шаол
+show селена at left, size_selena, disappear_fade 
+show шаол at right, size_shaol, disappear_fade 
 "Шаол побілів губами."
-show селена at left, size_selena
-show шаол at right, size_shaol
+show селена at left, size_selena, appear_fade 
+show шаол at right, size_shaol, appear_fade 
 c "Ти не вважаєш, що…"
 sh "Кляп у рот — чи сама замовкнеш?"
-hide селена
-hide шаол
+show селена at left, size_selena, disappear_fade 
+show шаол at right, size_shaol, disappear_fade 
 "Він відвернувся."
 "Караван зупинився на галявині. Шаол від’єднав ланцюг, різко смикнув — Селена змушена була зіскочити."
-show селена at left, size_selena
-show шаол at right, size_shaol
+show селена at left, size_selena, appear_fade 
+show шаол at right, size_shaol, appear_fade 
 sh "Привал."
-hide селена
-hide шаол
+show селена at left, size_selena, disappear_fade 
+show шаол at right, size_shaol, disappear_fade 
 
 #Епізод 3
 
@@ -557,50 +560,50 @@ hide шаол
 "У Террасен вона ніколи не поверталася — так велів Аробінн. Та й навіщо? Король Адарлану перетворив її батьківщину на попіл. Але красу рідних земель вона пам’ятала."
 "Аробінн не був балакучим, але Селена навчилася розуміти його без слів. Якби вона відмовилася, він не вбив би її — просто віддав би тим, хто міг зробити з нею що завгодно."
 "По суті, Аробінн подарував їй нове життя, нове ім’я, нову долю. Восьмирічна дівчинка не уявляла, що скоро її ім’я вимовлятимуть зі страхом."
-show гвардієць1 at left, size_guard
+show гвардієць1 at left, size_guard, appear_fade 
 gv1 "Чортів ліс."
-show гвардієць2 at right, size_guard
+show гвардієць2 at right, size_guard, appear_fade 
 gv2 "Чим швидше його спалять — тим краще."
-hide гвардієць1
-hide гвардієць2
+show гвардієць1 at left, size_guard, disappear_fade 
+show гвардієць2 at right, size_guard, disappear_fade 
 "Інші закивали. Селена стиснулася."
-show селена at left, size_selena
+show селена at left, size_selena, appear_fade 
 c "А чого ви чекали від цього лісу?"
-hide селена
+show селена at left, size_selena, disappear_fade 
 "Рука Шаола лягла на ефес меча."
-show селена at left, size_selena
+show селена at left, size_selena, appear_fade 
 c "Це не простий ліс. Це ліс Бранона."
-show гвардієць1 at right, size_guard
+show гвардієць1 at right, size_guard, appear_fade 
 gv1 "Батько в дитинстві розповідав казки, ніби тут жили феї. А потім зникли разом із цим поганим народом фе."
-hide гвардієць1
-show гвардієць2 at right, size_guard
+show гвардієць1 at right, size_guard, disappear_fade 
+show гвардієць2 at right, size_guard, appear_fade 
 gv2 "Ми очистили землі від погані!"
 c "На вашому місці я б прикусила язика. Король Бранон належав до народу фе. Цей ліс — досі його. Дерева, мабуть, пам’ятають."
-hide селена
-hide гвардієць2
+show селена at left, size_selena, disappear_fade 
+show гвардієць2 at right, size_guard, disappear_fade 
 "Солдати зареготали."
-show гвардієць1 at right, size_guard
+show гвардієць1 at right, size_guard, appear_fade 
 gv1 "Деревам тоді дві тисячі років!"
-hide гвардієць1
-show гвардієць2 at right, size_guard
+show гвардієць1 at right, size_guard, disappear_fade 
+show гвардієць2 at right, size_guard, appear_fade 
 gv2 "Фе безсмертні."
-hide гвардієць2
-show гвардієць1 at right, size_guard
+show гвардієць2 at right, size_guard, disappear_fade 
+show гвардієць1 at right, size_guard, appear_fade 
 gv1 "А дерева — ні."
-hide гвардієць1
-hide гвардієць2
+show гвардієць1 at right, size_guard, disappear_fade 
+show гвардієць2 at right, size_guard, disappear_fade 
 "Селена сердито мотнула головою й повернулася до їжі."
-show шаол at right, size_shaol
+show шаол at right, size_shaol, appear_fade 
 sh "Ти щось знаєш про цей ліс? (пошепки)"
-hide шаол
+show шаол at right, size_shaol, disappear_fade 
 "Вона відчула підвох. Хоче висміяти при всіх?"
-show селена at left, size_selena
+show селена at left, size_selena, appear_fade 
 c "Поки Адарлан не прийшов, ліс був пронизаний магією."
-hide селена
+show селена at left, size_selena, disappear_fade 
 "Він чекав."
-show селена at left, size_selena
+show селена at left, size_selena, appear_fade 
 c "І все. Більше нічого не знаю."
-hide селена
+show селена at left, size_selena, disappear_fade 
 "Забава не вдалася. Солдати розчаровано уткнулися в миски."
 "Селена збрехала — і Шаол зрозумів. Вона знала багато, але промовчала."
 "Адарлан розростався. Королі ненавиділи сусідство з фе. Нинішній король вирішив винищити їх і всю магію. Фе втекли, а магію оголосили казками. Через місяць вона зникла сама."
@@ -616,13 +619,13 @@ hide селена
 "Все мокре й холодне. Пальці ніг майже не відчувала. Спати лягала, загортаючи ноги в сухі ганчірки. Та одного дня дощі скінчилися."
 "У напівдрімоті не відразу помітила принца. Темне волосся майоріло на вітрі. Червоний плащ хвилювався. Біла сорочка, синій камзол із золотом, високі коричневі чоботи, шкіряний пояс. Лише мисливський ніж — занадто всипаний камінням."
 "Дорін поравнявся з Шаолом."
-show дорін at right
+show дорін at right, appear_fade 
 pr "Їдемо. (кивнув до крутого холму)"
-show шаол at left, size_shaol
+show шаол at left, size_shaol, appear_fade 
 sh "Куди?"
 pr "Полюбуємося краєвидом. І її візьмемо."
-hide шаол
-hide дорін
+show шаол at left, size_shaol, disappear_fade 
+show дорін at right, disappear_fade 
 "Селена поперхнулася. «Її»? Як тюк?"
 "Шаол виїхав із каравану, різко смикнувши. Коні принца й капітана понесли галопом — її кобила мусила бігти слідом."
 "У розриві хмар блиснуло сонце. Між деревами з’явився скляний шпиль, потім три, потім ще півдюжини. Кожен прагнув проткнути небо."
@@ -630,35 +633,35 @@ hide дорін
 "Величезне створіння. Місто зі скляних веж, мостів, сходів, переходів, залів, коридорів. Збудований поверх старого кам’яного замку."
 "Селена згадала, як бачила його вперше — вісім років тому, десятирічною. Замок здавався без смаку. Гроші викинуті, таланти марно витрачені."
 "Вона теребила бірюзовий плащ, боялася порвати чулки й забруднити червоні оксамитові черевички. Але думки були лише про людину, яку вона вбила три дні тому."
-show дорін at right
+show дорін at right, appear_fade 
 pr "— Ще одна вежа — і вся громада завалиться."
-hide дорін
+show дорін at right, disappear_fade 
 "Він зупинився праворуч від Шаола. Караван підтягувався."
-show дорін at right
+show дорін at right, appear_fade 
 pr "Залишилося кілька миль, але краще їхати при денному світлі. Ночуємо тут."
-show шаол at left, size_shaol
+show шаол at left, size_shaol, appear_fade 
 sh "Цікаво, що подумає ваш батько про неї."
 pr "Все буде добре, поки вона триматиме рот на замку. Сподіваюся, в батька зараз важливіші справи."
-hide дорін
-hide шаол
+show дорін at right, disappear_fade 
+show шаол at left, size_shaol, disappear_fade 
 "Принц розвернув коня й поїхав униз."
 "Селена не могла відірвати очей від замку. Навіть здалеку він гнітив."
 "Гвардійці знайшли місце для табору. Запалили багаття."
-show шаол at right, size_shaol
+show шаол at right, size_shaol, appear_fade 
 sh "Про що задумалася? Виглядаєш, ніби їдеш не на свободу, а на шибеницю."
-hide шаол
+show шаол at right, size_shaol, disappear_fade 
 "Селена перебирала пальцями поводдя."
-show селена at left, size_selena
+show селена at left, size_selena, appear_fade 
 c "Дивно бачити все це."
-show шаол at right, size_shaol
+show шаол at right, size_shaol, appear_fade 
 sh "Місто?"
 c "Місто, замок, халупи, річку… Я досі не розумію, як це сталося."
 sh "Як тебе схопили?"
-hide шаол
-hide селена
+show шаол at right, size_shaol, disappear_fade 
+show селена at left, size_selena, disappear_fade 
 "Селена кивнула."
-show селена at left, size_selena
-show шаол at right, size_shaol
+show селена at left, size_selena, appear_fade 
+show шаол at right, size_shaol, appear_fade 
 c "Знать і асасини схожі. Зовні — сила імперії, закони, але таємно знищують одне одного. Так і асасини — кодекс честі, але при нагоді…"
 sh "Думаєш, тебе зрадив хтось зі своїх?"
 c "Усі знали, що я беру найкращі замовлення й можу просити будь-яку ціну. Хтось хотів моє місце."
@@ -666,14 +669,14 @@ sh "Даремно сподівалася на повагу в такій ком
 c "Я й не сподівалася. Я їм не довіряла. Знала, що ненавидять."
 sh "Уявляю, яким пеклом став Ендов’єр."
 c "Так. Ендов’єр був пеклом."
-hide шаол
-hide селена
+show шаол at right, size_shaol, disappear_fade 
+show селена at left, size_selena, disappear_fade 
 "Він чекав продовження. Селена вирішила — не зашкодить."
-show селена at left, size_selena
-show шаол at right, size_shaol
+show селена at left, size_selena, appear_fade 
+show шаол at right, size_shaol, appear_fade 
 c "Привезли — обрізали волосся, вдягли в брудне ганчір’я, сунули кирку. Рани терли сіллю. Тією самою, що я видобувала. Шкіра не встигала гоїтися. Дякувати ейлуейцям — ночами очищали спину, жертвуючи сном."
-hide селена
-hide шаол
+show шаол at right, size_shaol, disappear_fade 
+show селена at left, size_selena, disappear_fade 
 "Шаол мовчав. Лише глянув і зліз із коня."
 "Розговорилася… дурна — лаяла себе Селена."
 "Того вечора капітан більше не говорив — лише віддавав накази."
@@ -694,17 +697,17 @@ hide шаол
 "Селена помітила, як уважно ці дівчата розглядали її намагаючись зрозуміти, що за особа затесалася в свиту принца."
 "Вона уявила себе збоку: в найкращому разі — важлива полонянка, яку везуть до замку. Щоб позлити цих дурочок, Селена привітно їм усміхнулася й навіть помахала."
 "Раптом пальці Шаола боляче стиснули їй руку."
-show селена at left, size_selena
+show селена at left, size_selena, appear_fade 
 c "Що таке? (пошепки)"
-show шаол at right, size_shaol
+show шаол at right, size_shaol, appear_fade 
 sh "Ти виглядаєш дурно (пошепки)"
 c "На мою думку, це вони виглядають дурно. (пошепки)"
 sh "Заспокойся й поводься пристойно (пошепки)"
 c "Я зараз можу зістрибнути з коня й утекти. (пошепки) — Селена всміхнулася якомусь простакові."
 sh "Можеш. Тільки навряд чи далеко втечеш із трьома стрілами в спині."
 c "Яка приємна в нас із тобою бесіда."
-hide селена
-hide шаол
+show селена at left, size_selena, disappear_fade 
+show шаол at right, size_shaol, disappear_fade 
 "Процесія в’їхала в торгову частину міста. Над дахами височів скляний замок — настільки високий, що верхні вежі видно лише задерши голову."
 "Далі шлях пролягав набережною Авері. Біля причалів стояли кораблі, всюди валялися сплутані сіті й канати. Матроси голосно перегукувалися — їм було ніколи дивитися на процесію."
 "Селена замилувалася парусниками, коли раптом почула знайомий звук хлиста."
@@ -716,26 +719,32 @@ hide шаол
 "Місто відсунулося, і раптом — раніше, ніж їй хотілося — попереду виросли масивні, скляні ворота замку. З обох боків мощеного проходу вишикувалися королівські гвардійці."
 "Дорога вивела на широкий внутрішній двір. Ноги затекли — хтось витяг її з сідла й поставив. Скрізь сяяло й виблискувало скло. Слуги швидко повели коней до стайні."
 "Селена озирнулася — принц ішов до неї."
-show дорін at right
+show дорін at right, appear_fade 
 pr "Подумати тільки: шістсот кімнат, покої для слуг і варти, три сади й садочок для ігор, стайні та всілякі господарські прибудови. Навіщо мені стільки простору?"
-show селена at left, size_selena
+show селена at left, size_selena, appear_fade 
 c "Не уявляю, як ви спите вночі, коли від смерті вас відділяє лише скляна стіна."
-hide селена
-hide дорін
+show селена at left, size_selena, disappear_fade 
+show дорін at right, disappear_fade 
 "Вона глянула вгору — й одразу опустила голову. Висоти не боялася, але думка, що під ногами лише скло, стиснула живіт."
-show дорін at right
+show селена at left, size_selena, appear_fade 
+show дорін at right, appear_fade 
 pr "Значить, ми з тобою схожі. Хвала богам, я розпорядився відвести тобі покої в кам’яному замку. Не хочу, щоб тобі було незручно."
-hide дорін
+show селена at left, size_selena, disappear_fade 
+show дорін at right, disappear_fade 
 "Слова можна було сприйняти як витончену насмішку, але Селена не була в становищі, щоб ображатися. Усміхатися принцу розхотілося — вона вдавала, ніби роздивляється масивні вхідні двері."
 "Димчасто-червоне скло, обрамлене залізом — наче роззявлена паща чудовиська. Але всередині — камінь. Хто вигадав ідіотську ідею — поверх кам’яного замку будувати скляний?"
-show дорін at right
+show селена at left, size_selena, appear_fade 
+show дорін at right, appear_fade 
 pr "А ти за дорогу трохи поповнішала. І рум’янець з’явився. Ласкаво просимо до мого дому, Селено Сардотін. Змагання починаються завтра. Капітан Естфол проведе тебе до покоїв."
-hide дорін
+show селена at left, size_selena, disappear_fade 
+show дорін at right, disappear_fade 
 "Селена розправила плечі — сподіваючись побачити хоч когось із майбутніх суперників. Нікого. Мабуть, ще не приїхали."
 "Принц повернувся до Шаола."
-show дорін at right
+show селена at left, size_selena, appear_fade 
+show дорін at right, appear_fade 
 pr "Мені треба зустрітися з батьком. Увечері побачимося."
-hide дорін
+show селена at left, size_selena, disappear_fade 
+show дорін at right, disappear_fade 
 "Забувши про Селену, Дорін пішов до сходів палацу."
 "Спадкоємний принц стримав слово. Покої Селени справді були в кам’яній частині замку. Більші, ніж вона уявляла: спальня з умивальнею й гардеробною, затишна їдальня, кімната для ігор і музикування. Скрізь витончено розставлені кушетки й м’які стільці."
 "Переважали два кольори: малиново-червоний і золотий. Спальню прикрашала величезна старовинна шпалера. З балкона відкривався вид на фонтан у саду."
@@ -761,291 +770,291 @@ hide дорін
 "Корсаж сукні з довгими рукавами кольору індиго розшитий тонкою золотою ниткою. Зі спини спадала хвилями білосніжна накидка. Волосся укладене локонами, стягнуте пурпуровою стрічкою."
 "Але варто згадати, як вона опинилася в цих розкішних покоях — усмішка згасла."
 "Невже захисниця короля має виглядати так? Селені раптом став огидний новий наряд. Так виглядають не захисниці, а королівські собачки!"
-show фаліпа at right
+show фаліпа at right, size_falipa, appear_fade 
 f "Як гарно!"
-hide фаліпа
+show фаліпа at right, size_falipa, disappear_fade 
 "Пролунав позаду жіночий голос. Селена обернулася — й навіть прикусила губу. Рухатися в такому вбранні можна було лише повільно. Особливо заважав туго зашнурований корсаж."
 "Перед нею стояла дама років на двадцять старша. Крупна, але струнка. Сукня — витончене поєднання кобальтового й персикового. Ознака королівської служби. Дама вклонилася."
-show фаліпа at right
-show селена at left, size_selena
+show фаліпа at right, size_falipa, appear_fade 
+show селена at left, size_selena, appear_fade 
 f "Мене звати Фаліпа Спандель. Я твоя особиста служниця. А ти, мабуть…"
 c "Селена Сардотін"
-hide селена
-hide фаліпа
+show фаліпа at right, size_falipa, disappear_fade 
+show селена at left, size_selena, disappear_fade 
 "Очі Фаліпи округлилися."
-show фаліпа at right
+show фаліпа at right, size_falipa, appear_fade 
 f "Раджу нікому не називати свого імені. Я одна його знаю. Мабуть, і твоя охорона теж."
-show селена at left, size_selena
+show селена at left, size_selena, appear_fade 
 c "А придворним і всім іншим не здасться дивним, що біля моїх дверей стоять вартові?"
-hide селена
-hide фаліпа
+show фаліпа at right, size_falipa, disappear_fade 
+show селена at left, size_selena, disappear_fade 
 "Фаліпа, не звертаючи уваги на гнівні очі Селени, підійшла й почала поправляти складки сукні."
-show фаліпа at right
+show фаліпа at right, size_falipa, appear_fade 
 f "До інших претендентів теж приставлена охорона. Тож вартові біля твоїх дверей нікого не здивують. І не дивись таким поглядом. Коли ти так дивишся — твоє обличчя втрачає всяку привабливість."
-hide фаліпа
+show фаліпа at right, size_falipa, disappear_fade 
 "Фаліпа простягнула руку, щоб поплескати по щоці, але Селена різко відсмикнулася."
-show селена at left, size_selena
+show селена at left, size_selena, appear_fade 
 c "Ви з глузду з’їхали? Я асасин, а не придворна дурочка!"
-show фаліпа at right
+show фаліпа at right, size_falipa, appear_fade 
 f "При цьому ти залишаєшся жінкою. І поки тебе передали під мою опіку — поводитимешся як придворна дама."
-hide селена
-hide фаліпа
+show фаліпа at right, size_falipa, disappear_fade 
+show селена at left, size_selena, disappear_fade 
 "Селена здивовано заморгала."
-show селена at left, size_selena
+show селена at left, size_selena, appear_fade 
 c "А я-то прийняла вас за безсловесну рохлю. Ви з усіма придворними дамами так поводитеся?"
-show фаліпа at right
+show фаліпа at right, size_falipa, appear_fade 
 f "Ні. Усе залежить від того, як вони поводяться зі мною. Тому мене й призначили прислужувати тобі."
 c "Тоді вам повинно бути відомо, що мене сюди привезли не для придворних церемоній!"
 f "Мені відомо. Але я хочу, щоб і ти знала: не варто виявляти таке явне неповагу до тих, хто ставиться до тебе по-доброму."
-hide селена
-hide фаліпа
+show фаліпа at right, size_falipa, disappear_fade 
+show селена at left, size_selena, disappear_fade 
 "Селена проводила служницю поглядом і хвилину здивовано дивилася на зачинені двері."
 "Спадкоємний принц Адарлану не кліпаючи дивився на батька й чекав, коли той заговорить. Король мовчки сидів на скляному троні й теж дивився на сина. Іноді Дорін забував, наскільки мало він схожий на батька."
 "Інша справа молодший брат Холлін — успадкував і кремезність, і кругле обличчя з гострими очицями. Дорін же — високий, стрункий, ніби народився від іншого батька. А глибокі сині очі — взагалі загадка. Таких не було навіть у матері. Залишалося лише гадати, від якого предка вони дісталися."
-show король at right
+show король at right, appear_fade 
 K "Ви її привезли?"
-show дорін at left
+show дорін at left, appear_fade 
 pr "Поки вона тут то ніякої загрози не становить."
-hide дорін
-hide король
+show дорін at left, disappear_fade 
+show король at right, disappear_fade 
 "Селена Сардотін — претендентка спадкоємного принца. Це нагадувало азартну гру з непередбачуваним результатом. Випробування батьківського терпіння. Сам факт її появи в замку ще нічого не вирішував. Король міг одним словом перекреслити всі задуми сина."
-show король at right
-show дорін at left
+show король at right, appear_fade 
+show дорін at left, appear_fade 
 K "Ти міркуєш, як усі ті дурні, яких вона вбила. Ця дівчисько вірна лише собі. Якщо з’явиться нагода — без вагань ударить тебе кинджалом у серце."
 pr "У такому разі в неї всі шанси виграти ваше змагання. Можна було б і взагалі не влаштовувати ніяких змагань."
 K "Ти так говориш, бо боїшся втратити чималу суму грошенят, — відповів король."
-hide дорін
-hide король
+show дорін at left, disappear_fade 
+show король at right, disappear_fade 
 "Він, на щастя, не розумів, що пошуки претендента принц затіяв зовсім з іншою метою. Доріна цікавили не гроші й не виграш. Він ухопився за ці пошуки, щоб вирватися з-під батьківського гніту й на якийсь час відчути себе вільною людиною."
 "Дорін зібрався внутрішньо й промовив слова, які повторював подумки весь зворотний шлях з Ендов’єра"
-show дорін at left
-show король at right
+show дорін at left, appear_fade 
+show король at right, appear_fade 
 pr "Можу ручатися: вона здатна негайно приступити до виконання обов’язків. Її не треба вчити й готувати. Я вже казав вам, батьку: дурно влаштовувати ці змагання."
 K "Якщо ти не почнеш думати над своїми словами, я велю віддати тебе цій дівці… для вправ."
 pr "І що тоді? Холлін стане спадкоємним принцом?"
 K "Я знаю, що кажу, Доріне, і не тобі сумніватися в моїх словах! Ти думаєш, що ця… дівка здатна перемогти. Не забувай: герцог Перрантгон виставив набагато сильнішого претендента — Кейна. Ти вчинив би розумніше, якби знайшов когось йому під стать. Кейн загартований кров’ю й залізом на полях битв."
-hide дорін
-hide король
+show дорін at left, disappear_fade 
+show король at right, disappear_fade 
 "Дорін стиснув кулаки в кишенях — король не помітив."
-show дорін at left
-show король at right
+show дорін at left, appear_fade 
+show король at right, appear_fade 
 pr "Батьку, а вам не здається, що саме слово «захисник» звучить тут досить дивно, якщо врахувати, що наші «захисники» — не більше ніж злочинці?"
-hide дорін
-hide король
+show дорін at left, disappear_fade 
+show король at right, disappear_fade 
 "Король підвівся з трону й указав на карту на дальній стіні зали для нарад."
-show дорін at left
-show король at right
+show дорін at left, appear_fade 
+show король at right, appear_fade 
 K "Я король Адарлану, а скоро стану правителем усієї Ерілеї. Ти не смієш сумніватися в моїх рішеннях."
-hide дорін
-hide король
+show дорін at left, disappear_fade 
+show король at right, disappear_fade 
 "Дорін зрозумів — зайшов надто далеко. Існувала тонка межа між синівським свавіллям і відкритим непокорою. Межа, яку спадкоємний принц завжди намагався не переступати. Він поквапливо пробурмотів вибачення."
-show дорін at left
-show король at right
+show дорін at left, appear_fade 
+show король at right, appear_fade 
 K "Ми воюємо з Вендаліном, мене скрізь оточують вороги. Хто краще виконає мою волю, як не той, кому я дам не лише шанс почати життя заново, а й щедро винагороджу за вірну службу?"
-hide дорін
-hide король
+show дорін at left, disappear_fade 
+show король at right, disappear_fade 
 "Бачачи, що Дорін мовчить, король усміхнувся. Принцу коштувало великих зусиль не здригнутися під пильним поглядом батька."
-show дорін at left
-show король at right
+show дорін at left, appear_fade 
+show король at right, appear_fade 
 K "Перрантгон сказав, що в дорозі ти поводився гідно."
 pr "Маючи такого сторожового пса, як Перрантгон, я й не міг поводитися інакше."
 K "Я був змушений послати його з тобою. Не вистачало ще, щоб потім якась селянка голосила біля воріт замку, що ти розбив їй серце."
-hide дорін
-hide король
+show дорін at left, disappear_fade 
+show король at right, disappear_fade 
 "Дорін спалахнув, але погляду не відвів."
-show дорін at left
-show король at right
+show дорін at left, appear_fade 
+show король at right, appear_fade 
 K "Я надто довго й важко працював, створюючи свою імперію, і не хочу, щоб ти ускладнював мені справу незаконними спадкоємцями. Женися на гідній дівчині, подаруй мені пару онуків, а потім можеш путатися з ким завгодно. Коли сам станеш королем — зрозумієш правоту моїх слів."
 pr "Коли я стану королем, я не стверджуватиму, що влада над Террасеном належить мені за сумнівним правом спадкування."
 K "Не дурій, Доріне. Розраховуєш задобрити цих бунтівників? Та хоч самоуправління їм запропонуй — вони все одно насадять твою голову на спис і виставлять перед воротами Оринфа."
 pr "Можливо, разом із головами моїх незаконних спадкоємців, якщо пощастить їх завести."
-hide дорін
-hide король
+show дорін at left, disappear_fade 
+show король at right, disappear_fade 
 "Король нагородив його їдкою усмішкою."
-show дорін at left
-show король at right
+show дорін at left, appear_fade 
+show король at right, appear_fade 
 K "Сину мій срібноустий, твоє дитинство давно скінчилося, а ти так і не зрозумів, що слова бувають небезпечніші за знаряддя."
-hide дорін
-hide король
+show дорін at left, disappear_fade 
+show король at right, disappear_fade 
 "Якийсь час батько й син мовчки дивилися один на одного. Потім Дорін заговорив знову:"
-show дорін at left
-show король at right
+show дорін at left, appear_fade 
+show король at right, appear_fade 
 pr "Я знаю: наші війська несуть втрати, штурмуючи прибережні фортеці Вендаліну. Хіба ви не бачите в цьому знак межі ваших можливостей? Скільки можна грати в бога?"
 K "Граю? Я не граю. І те, чим я займаюся, аж ніяк не гра. Якою б милою не здавалася тобі ця дівчисько — вона відьма. Тримайся від неї подалі, зрозумів?"
 pr "Ви про кого? Про Селену? Я бачу в ній насамперед вмілого асасина."
 K "Вона небезпечна. Не думай, що за визволення з Ендов’єра вона буде тобі вдячна до гробу. У неї на думці лише одне — втекти звідси. А в тобі вона бачить лише засіб для втечі, і не більше."
 K "А ще ти не лише мій син, ти насамперед мій підданий а Я — твій правитель. Тож будь ласка, підкоряйся мені, Доріне Хавільярде, інакше тобі це дорого обійдеться."
-hide дорін
-hide король
+show дорін at left, disappear_fade 
+show король at right, disappear_fade 
 "Знаючи, що кожна зайва хвилина в залі лише погіршить становище, спадкоємний принц Адарлану мовчки вклонився й вийшов, переповнений ледь стримуваною люттю."
 
 #Епізод 5
 
 "Селена йшла мармуровим залом разом із Шаолом, який здавалося б ніколи не прибирав руку з ефеса меча."
-show селена at left, size_selena
+show селена at left, size_selena, appear_fade 
 c "А в сусідній залі є щось цікаве?"
-show шаол at right, size_shaol
+show шаол at right, size_shaol, appear_fade 
 sh "Ми ж там уже були. Ми обійшли з тобою всі три сади, бальні зали, кімнати історичних подій і милувалися всіма краєвидами з вікон кам’яного замку. Якщо не хочеш гуляти скляним — більше тут дивитися нічого."
-hide селена
-hide шаол
+show селена at left, size_selena, disappear_fade 
+show шаол at right, size_shaol, disappear_fade 
 "Селена склала руки на грудях. Капітан клюнув на її хитрість і справді повірив, що їй остогидло сидіти в розкішних покоях і вона хоче, щоб він поводив її замком. Насправді Селена видивлялася нові шляхи для втечі. До того ж їй справді нестерпно було сидіти в своїй розкішній клітці, чекаючи завтрашніх змагань."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 sh "Не розумію, чому ти так уперто відмовляєшся прогулятися скляним замком. Внутрішнє оздоблення нічим не відрізняється від цього. Там є на що подивитися. А який вид із вікон!"
 c "Тільки ідіот наважиться ходити по скляній будівлі."
 sh "Скло там не поступається міцністю каменю й заліза."
 c "Сумніваюся. Якщо туди зайде якийсь товстун і тупне посильніше — вся ця пишнота розлетиться на шматки."
 sh "Туди заходило чимало товстунів, які звикли важко тупати. Але скляний замок, як бачиш, стоїть цілий."
-hide селена
-hide шаол
+show селена at left, size_selena, disappear_fade 
+show шаол at right, size_shaol, disappear_fade 
 "Сама думка йти по скляній підлозі на висоті кількох поверхів викликала в Селени нудоту."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 c "Скажи, а тут немає якогось звіринця? Чи бібліотеки?"
-hide селена
-hide шаол
+show селена at left, size_selena, disappear_fade 
+show шаол at right, size_shaol, disappear_fade 
 "Питання чомусь застало Шаола зненацька. Вони саме опинилися біля масивних, щільно зачинених дверей. Зсередини лунали голоси й мелодійні звуки арфи. Почувши це Селена одразу забула про бібліотеки та звіринці."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 c "А там що?"
 sh "Двір королеви."
 c "Двір королеви Георгіни?"
-hide селена
-hide шаол
+show селена at left, size_selena, disappear_fade 
+show шаол at right, size_shaol, disappear_fade 
 "Невже цей бравурний капітан не розумів, які цінні відомості щойно вибовкнув? Мабуть, втратив пильність і повірив, ніби в межах замку Селена не становить небезпеки. Дурненький хлопчисько!"
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 sh "Так. Там покої королеви Георгіни Хавільярд."
 c "А юний принц теж тут?"
 sh "Ти про Холліна? Ні, він у гірській школі. Подалі від спокус замку."
 c "А він такий же чарівний, як старший брат?"
-hide селена
-hide шаол
+show селена at left, size_selena, disappear_fade 
+show шаол at right, size_shaol, disappear_fade 
 "Питання було задане просто так — перевірити щирість капітана. Селена знала: молодший брат ні зовнішністю, ні характером не був схожий на старшого. Кремезний, досить товстий хлопчисько, надмірно розпещений."
 "За кілька місяців до того, як Селена потрапила в полон, по столиці поповзли чутки про скандал із молодшим нащадком королівського роду. Кухар, що варив кашу для Холліна Хавільярда, на мить відволікся — їжа підгоріла."
 "Ніхто не помітив, і нещасну кашу подали його високості. Хлопчисько так розлютився, що сильно побив ні в чому не винну жінку, яка прислужувала йому за столом. Сім’ї щедро заплатили, але чутки просочилися за межі замку."
 "Високородного оболтуса терміново відправили в гірську школу, а новина пішла гуляти адарланськими просторами. Після цього королева Георгіна цілий місяць не виходила зі своїх покоїв."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 sh "Холлін увесь у батька" 
-hide селена
-hide шаол
+show селена at left, size_selena, disappear_fade 
+show шаол at right, size_shaol, disappear_fade 
 "Кілька хвилин вони йшли мовчки. Раптом десь пролунав дивний гуркіт, схожий на вибух. За мить шум повторився."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 c "А це що ще за кошмарні звуки?"
-hide селена
-hide шаол
+show селена at left, size_selena, disappear_fade 
+show шаол at right, size_shaol, disappear_fade 
 "Капітан пройшов крізь скляні двері в сад."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 sh "Це б’ють годиники на вежі."
-hide селена
-hide шаол
+show селена at left, size_selena, disappear_fade 
+show шаол at right, size_shaol, disappear_fade 
 "Селена подолала замішання, і, на щастя, скоро гуркіт припинився."
 "У цьому саду вони вже були, але з іншого боку, де Часову вежу ховали дерева. Тепер перед Селеною височіла похмура споруда з чорного, з чорнильним відливом, каменю. Усі чотири циферблати прикрашали парні горгульї. Їхні морди застигли в беззвучному крику."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 c "Яка страшна вежа (пошепки)"
 sh "У дитинстві я боявся підходити до цієї вежі."
 c "Таке швидше побачиш біля адських воріт, а не в саду. І давно її збудували?"
 sh "Король наказав звести її незадовго до народження Доріна."
 c "Нинішній король? Його батько?"
-hide селена
-hide шаол
+show селена at left, size_selena, disappear_fade 
+show шаол at right, size_shaol, disappear_fade 
 "Шаол кивнув."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 c "Навіщо йому тут така жахливість?"
-hide селена
-hide шаол
+show селена at left, size_selena, disappear_fade 
+show шаол at right, size_shaol, disappear_fade 
 "Шаол лише махнув рукою приказуючи йти далі."
 "Селена й сама рада була швидше піти, але чомусь захотілося ще раз глянути на похмуру споруду. Вона обернулася — і побачила, що скрючений палець однієї з горгулій вказує прямо на неї. Селена могла б заприсягтися, що чудовисько навіть трохи роззявило пащу."
 "Поквапливо відвернувшись, вона пішла за Шаолом. Але тут її увагу привернула дивна плитка на доріжці."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 c "А це що?"
 sh "Ти про що?"
-hide селена
-hide шаол
+show селена at left, size_selena, disappear_fade 
+show шаол at right, size_shaol, disappear_fade 
 "Селена кивнула на чорну матову плитку з нерівними краями. На ній був нашкрябаний знак: коло, пересічене вертикаллю. Лінія трохи виступала за межі й закінчувалася гачками — один вгору, інший вниз."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 c "Що це означає?"
-hide селена
-hide шаол
+show селена at left, size_selena, disappear_fade 
+show шаол at right, size_shaol, disappear_fade 
 "Капітан підійшов, придивився."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 sh "Поняття не маю."
-hide селена
-hide шаол
+show селена at left, size_selena, disappear_fade 
+show шаол at right, size_shaol, disappear_fade 
 "Селена ще раз глянула на горгулью й сказала"
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 c "Її палець вказує прямо на плитку. Що означає цей символ?"
 sh "Він означає… безсоромну витрату мого часу. Якийсь ремісник від нудьги нашкрябав цей знак, коли мостив доріжку. Нічого особливого."
 c "А на інших доріжках теж є знаки?"
 sh "Якщо поповзаєш — напевно знайдеш."
-hide селена
-hide шаол
+show селена at left, size_selena, disappear_fade 
+show шаол at right, size_shaol, disappear_fade 
 "Селена не стала випробовувати терпіння капітана й дозволила відвести себе з саду, від похмурої вежі й чудовиськ на циферблатах. Разом із Шаолом вона повернулася в мармурові коридори замку, але ніяк не могла позбутися відчуття, що вирячені очі горгульї досі стежать за нею."
 "Далі шлях пролягав повз кухонні приміщення. Далі Шаол швидко завів Селену в інший коридор, де нікого не було. Пройшовши кілька кроків, вона зупинилася як укопана."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 c "А це що? (пошепки, вказуючи на височенні дубові двері.)"
-hide селена
-hide шаол
+show селена at left, size_selena, disappear_fade 
+show шаол at right, size_shaol, disappear_fade 
 "Очі Селени ще більше округлилися, коли вона помітила двох драконів, що ніби охороняли вхід. Здавалося, дракони ось-ось злетять зі стіни. У них було по чотири лапи — не те що у злих, огидних двоногих виверн, що прикрашали королівський герб."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 sh "Бібліотека."
 c "Бібліо… А туди можна зайти?"
-hide селена
-hide шаол
+show селена at left, size_selena, disappear_fade 
+show шаол at right, size_shaol, disappear_fade 
 "Селена покосилася на важкі залізні ручки у формі кігтистих лап. Капітан неохоче штовхнув масивні двері. На стінах блищали канделябри — в деяких горіла по одній свічці. Підлога — чорно-білий мармуровий шаховий візерунок."
 "Рівними рядами стояли столи з червоного дерева й такі ж стільці з червоними оксамитовими спинками. У мармуровому каміні тьмяно світилися тліючі вуглинки. А далі — простір, заповнений височенними шафами."
 "До верхніх полиць можна було дістатися лише драбинами. Бібліотека мала другий ярус — туди вели кілька сходів. І скрізь лише книги."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 c "Скільки ж тут книг? (пошепки)"
 sh "Коли востаннє хтось рахував — набрався мільйон. Але це було двісті років тому. Думаю, їх навіть більше. Ходять легенди, ніби під цією бібліотекою є інша — і в її тунелях та катакомбах теж зберігаються книги."
 c "Більше мільйона? Це правда?"
-hide селена
-hide шаол
+show селена at left, size_selena, disappear_fade 
+show шаол at right, size_shaol, disappear_fade 
 "Серце Селени радісно закалатало, і вона усміхнулася."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 c "Мабуть, мені життя не вистачило б, щоб просто перегорнути половину цих книг!"
 sh "Ти любиш читати?"
 c "А ти хіба ні?"
-hide селена
-hide шаол
+show селена at left, size_selena, disappear_fade 
+show шаол at right, size_shaol, disappear_fade 
 "Не чекаючи відповіді, Селена кинулася до найближчих полиць і почала читати назви на корінцях. Усі книги були їй незнайомі. Усміхаючись, вона пішла далі, торкаючись фоліантів. Скоро руки вкрилися пилом — але це їй навіть подобалося."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 sh "Я й не знав, що асасини люблять читати. Ти казала, що родом із Террасену. Ти коли-небудь була в Головній бібліотеці Оринфа? Кажуть, вона вдвічі більша за цю, і колись там збирали знання з усього світу."
-hide селена
-hide шаол
+show селена at left, size_selena, disappear_fade 
+show шаол at right, size_shaol, disappear_fade 
 "Селена неохоче відірвалася від полиць."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 c "Так, це правда. У Головній бібліотеці я була лише раз — зовсім маленькою. Мене привели туди, дорослі пильно стежили, щоб я нічого не порвала й не зіпсувала. Мені лише сказали, що на столах лежать безцінні манускрипти, і заборонили торкатися."
-hide селена
-hide шаол
+show селена at left, size_selena, disappear_fade 
+show шаол at right, size_shaol, disappear_fade 
 "Вона зітхнула. Це було її першим і єдиним відвідуванням Головної бібліотеки. Важко уявити, скільки справжніх скарбів знань загинуло, коли війська Адарлану вторглися на її батьківщину й батько Доріна оголосив магію поза законом."
 "Значить, усе, що збиралося століттями, зникло безповоротно? Але в глибині душі Селена тримала надію: Верховні хранителі знань усе ж змогли сховати найцінніші книги й рукописи."
 "Після вбивства правителя Террасену й його родини ці мудрі люди зрозуміли: наближаються важкі й небезпечні часи — треба рятувати те, що вдасться. Але коли йдеться про мудрість і знання, накопичені за дві тисячі років, як обрати найголовніше?"
 "Селена раптом відчула всередині холод і порожнечу. Бажаючи змінити тему, спитала"
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 c "А чому біля бібліотеки немає вартових?"
 sh "Бо тут нема чого охороняти."
-hide селена
-hide шаол
+show селена at left, size_selena, disappear_fade 
+show шаол at right, size_shaol, disappear_fade 
 "Як же він помилявся! Бібліотекарі були страшніші за асасинів. Ці люди постійно читали, у їхніх головах безперервно бродили думки й народжувалися ідеї. А ідеї, як відомо, — найнебезпечніша зброя."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 c "Скажи, а придворні знають про існування бібліотеки?"
 sh "Думаю, так."
 c "Тоді чому тут порожньо?"
@@ -1057,15 +1066,15 @@ sh "Але ці книги належать королю."
 c "Ну то й що? Я ж їх не зіпсую."
 sh "Бібліотека — власність короля, і вільний доступ сюди відкритий лише людям знатного походження. Якщо хочеш, щоб тобі дозволили приходити в бібліотеку — потрібен дозвіл від короля чи принца."
 c "Дуже сумніваюся, що хтось із них помітить тимчасове зникнення кількох книг. Я ж потім усе поверну на місце."
-hide селена
-hide шаол
+show селена at left, size_selena, disappear_fade 
+show шаол at right, size_shaol, disappear_fade 
 "Шаол позіхнув."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 sh "Вже пізно. Я зголоднів."
 c "Ну то йди поїж. Я якось сама знайду дорогу."
-hide селена
-hide шаол
+show селена at left, size_selena, disappear_fade 
+show шаол at right, size_shaol, disappear_fade 
 "Капітан королівської гвардії жарту не оцінив. Він щось буркнув і силоміць вивів Селену з бібліотеки."
 "Вечеряла вона на самоті. Поки їла, знову думала про втечу й про те, з чого ще зробити зброю. Після їжі почала блукати кімнатами. Цікаво, у якій частині замку розмістили її майбутніх суперників? А якщо їм захочеться почитати — їх пустять у бібліотеку?"
 "Селена відчувала втому, але не настільки, щоб завалитися спати — сонце щойно зайшло. Не вийшло з читанням — можна знайти інше заняття. Наприклад, пограти на клавікордах… Селена згадала, як довго її пальці не торкалися клавіш, і скривилася."
@@ -1088,135 +1097,136 @@ hide шаол
 "Селена вистрибнула з ліжка, виглянула за двері, потім подивилася у саду з балкону."
 "Думки перервалися появою трьох жінок, що вийшли з-за живої огорожі. Безтурботно балакаючи, вони йшли до фонтану. Жінки були майже її ровесницями, гарно вбрані, та, що йшла посередині — помітно вирізнялася вишуканістю вбрання. Обидві супутниці в скромніших блідо-блакитних сукнях скоріше за все були служницями."
 "Красунька в червоному церемонно розправила поділ свого плаття."
-show кальтена at center
+show кальтена at right, size_kaltena, appear_fade 
 ka "Дарма я не вдягла біле, Дорін любить біле. Б’юся об заклад: сьогодні всі вирядяться в біле."
-show спутниця1 at right
+show спутниця1 at left, appear_fade 
 spk1 "Накажете перевдягнути Вас?"
 ka "Ні, мені подобається ця сукня, хоч вона й далеко не нова."
-show спутниця2 at left
+show спутниця1 at left, disappear_fade 
+show спутниця2 at left, appear_fade 
 spk2 "Але…"
-hide кальтена
-hide спутниця1
-hide спутниця2
+show кальтена at right, size_kaltena, disappear_fade 
+show спутниця1 at left, disappear_fade 
+show спутниця2 at left, disappear_fade 
 "Спробувала розтулити рота друга й одразу замовкла після незадоволеного жесту пані."
 "Селена навшпиньках повернулася до перил. Сукня зовсім не здалася їй старою."
-show кальтена at center
+show кальтена at right, size_kaltena, appear_fade 
 ka "Переконана, Дорін не забариться покликати мене на приватну аудієнцію. Боюся, як би справу не зіпсували настирливі залицяння Перрантгона, але я все одно йому дуже вдячна. Адже це він запросив мене до Рафтхолу. Не здивуюся, якщо моя матуся перевертається в могилі від заздрощів! Але ось хто та…"
-show спутниця1 at right
+show спутниця1 at left, appear_fade 
 spk1 "Про кого Ви, пані?"
 ka "Про ту дівку, яку принц привіз до Рафтхолу. Кажуть, він їхав за нею через усю Ерілею, а під час урочистої процесії містом вона красувалася поруч із капітаном королівської гвардії. Але це все, що мені відомо. Я навіть імені її не знаю. Втім, чого я хвилююся?"
 ka "Ця блудниця — не більше ніж швидкоплинна забава принца. Нехай не розраховує на теплий прийом двору."
-show селена at left, size_selena
+show спутниця1 at left, disappear_fade
+show селена at left, size_selena, appear_fade 
 c "Як вона мене назвала? (подумки)"
-hide кальтена
-hide спутниця1
-hide селена
+show кальтена at right, size_kaltena, disappear_fade 
+show спутниця1 at left, disappear_fade
+show селена at left, size_selena, disappear_fade 
 "Чорноволоса терла скроні й нила"
-show кальтена at center
-show спутниця1 at right
-show спутниця2 at left
+show кальтена at right, size_kaltena, appear_fade 
 ka "Де моє зілля від мігрені? Невже вона знову укладе мене в ліжко? Ходімо!"
-hide кальтена
+show кальтена at right, size_kaltena, disappear_fade
 "Вона повернулася до Селени спиною, збираючись іти."
-show кальтена at center
+show кальтена at right, size_kaltena, appear_fade
 ka "І все одно треба буде розвідати, що за пташку привіз принц. Думаю, я навіть…"
-hide кальтена
+show кальтена at right, size_kaltena, disappear_fade
 "Шмяк!"
 "Фрейліни так і не дізналися, про що думає їхня примхлива пані. Шум змусив вартових схопитися за арбалети й націлити їх на балкон. Але балкон був порожній… Квітковий горщик, кинутий Селеною, пролетів повз ціль. Що ж, наступного разу вона не промахнеться."
 "Забувши про мігрень, чорноволоса відпускала такі соковиті прокльони, що Селена навіть затулила долонею рот, боячись сміхом видати себе. Фрейліни заметушилися, зчищаючи землю зі складок сукні пані та її замшевих черевиків."
-show кальтена at center
+show кальтена at right, size_kaltena, appear_fade 
 ka "Відчепіться!"
-hide кальтена
+show кальтена at right, size_kaltena, disappear_fade 
 "Стражники зробили кам’яні обличчя, намагаючись не видати здивування."
-show кальтена at center
+show кальтена at right, size_kaltena, appear_fade 
 ka "Геть звідси!"
-hide кальтена
+show кальтена at right, size_kaltena, disappear_fade 
 "Коли всі троє зникли, «принцева блудниця» вбігла до спальні й через вартових покликала служниць, звелівши принести їй найгарніший наряд, який вони знайдуть."
 "Декілька годин потому Селена стояла перед дзеркалом, дивилася на своє відображення й усміхалася. Під корсажем найгарнішого плаття сховано саморобний кинджал, зроблений напередодні з кістяних шпильок."
 "Тихо відчинилися двері, і в дзеркалі з’явилося відображення Фаліпи. Селена спробувала надати обличчю байдужий вираз, але служниця одразу зрозуміла, чим займалася колишня в’язниця."
-show фаліпа at right
+show фаліпа at right, appear_fade 
 f "Шкода, що ти… у такому становищі. Тобі б нічого не коштувало вскружити голову якомусь молодому аристократу й вийти за нього. А якщо постаратися — то й його високості."
-show селена at left, size_selena
+show селена at left, size_selena, appear_fade 
 c "Здається, про це вже пліткують. Вранці я підслухала розмову в саду. Одна особа казала, що принц привіз мене сюди для забави. А я-то думала, весь двір уже знає про це дурне змагання."
 f "Наберися терпіння, через тиждень усе забудеться. Варто принцу звернути увагу на якусь жінку — і двір почне шепотітися про неї. І не сприймай ці слова за образу, моя мила. Спадкоємного принца постійно оточують гарні жінки. Тобі має лестити, що тебе приймають за його коханку."
 c "А мені це не лестить і не польстить."
 f "Краще називатися коханкою, ніж асасином."
-hide селена
-hide фаліпа
+show фаліпа at right, disappear_fade 
+show селена at left, size_selena, disappear_fade 
 "Селена хотіла насупитися, але, глянувши на Фаліпу, засміялася."
-show фаліпа at right
-show селена at left, size_selena
+show фаліпа at right, appear_fade 
+show селена at left, size_selena, appear_fade 
 f "Усмішка тобі дуже пасує. Ти стаєш гарнішою. І навіть молодшою — хоч тобі зараз це навряд чи хочеться."
 c "Можливо, ви маєте рацію."
-hide селена
-hide фаліпа
+show фаліпа at right, disappear_fade 
+show селена at left, size_selena, disappear_fade 
 "Зітхнула Селена й плюхнулася на рожево-ліловий диван."
-show фаліпа at right
-show селена at left, size_selena
+show фаліпа at right, appear_fade 
+show селена at left, size_selena, appear_fade 
 f "Негайно встань! Ти помнеш сукню."
 c "Але я не можу годинами стояти. Особливо в такому взутті, я що, і їсти маю стоячи?"
 f "Потерпи ще трохи. Я хочу почути від інших, яка ти прекрасна в цьому вбранні."
 c "Хто вам це скаже? Ніхто не знає, що ви моя служниця."
 f "Помиляєшся, люба. Усі знають, що мене призначили прислужувати новій коханці принца, яку він привіз до Рафтхолу."
-hide селена
-hide фаліпа
+show фаліпа at right, disappear_fade 
+show селена at left, size_selena, disappear_fade 
 "Селена прикусила губу й задумалася. Чи на руку їй це? А як її представлятимуть майбутнім суперникам?"
 "З гуркотом відчинилися двері. Почулися знайомі кроки й не менш знайоме бурмотіння крізь зуби. У дзеркалі відобразився задиханий Шаол. Фаліпа проворно зробила реверанс."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 sh "Ти…"
-hide шаол
+show селена at left, size_selena, disappear_fade 
+show шаол at right, size_shaol, disappear_fade 
 "Почав він і тут же замовк, роздивляючись нове вбрання Селени. Потім швидко отямився."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 sh "Ідемо нагору. Швидко."
 c "Я б хотіла знати, куди нам так поспішно треба йти?"
-hide селена
-hide шаол
+show шаол at right, size_shaol, disappear_fade 
+show селена at left, size_selena, disappear_fade 
 "Церемонно спитала вона, тріпотіючи віями."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 sh "Нічого зі мною кокетничати. Швидше давай!"
-hide селена
-hide шаол
+show шаол at right, size_shaol, disappear_fade 
+show селена at left, size_selena, disappear_fade 
 "Він схопив Селену за руку, та потяг її в коридор."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 c "Чому ж ти не попередив мене вчора? Я б одяглася раніше — і ми зараз не мчали б щодуху!"
-hide селена
-hide шаол
+show шаол at right, size_shaol, disappear_fade 
+show селена at left, size_selena, disappear_fade 
 "Селена важко дихала. Цей клятий корсаж загрожував зламати їй ребра. Піднімаючись довгими сходами, вона однією рукою тримала волосся, боячись зіпсувати зачіску."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 sh "У мене крім тебе клопотів вистачає, добре, що ти хоч здогадалася одягнутися. Але краще б ти нарядилася скромніше. Усе-таки до короля йдемо."
 c "До короля?"
 sh "Так, до короля. А ти думала, що не побачиш його?"
 c "Я думала, що сьогодні мені доведеться змагатися. Так учора сказав принц."
 sh "Аудієнція в короля — це офіційний початок змагань, а по-справжньому вони почнуться завтра."
-hide селена
-hide шаол
+show шаол at right, size_shaol, disappear_fade 
+show селена at left, size_selena, disappear_fade 
 "Руки Селени налилися свинцем. Вона забула й про садна на ногах, і про ребра, нещадно стиснуті корсажем. Селена з капітаном опинилися на початку довгого коридору. Майбутня королівська захисниця ледь дихала."
 "У Селени крутилася голова. Бажаючи зрозуміти, де вони, вона глянула в найближче вікно. Земля була далеко-далеко внизу. Вони прийшли в скляну частину замку — і це Селені дуже не сподобалося. Що завгодно, тільки не стояти в скляному замку."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 c "Ну чому ти не сказав мені раніше?"
 sh "Бо король не ділиться зі мною своїми планами. Але нічого, тепер зовсім недовго. Сподіваюся, ти не єдина запізнилася. Коли ввійдеш одразу кланяйся, і низько."
-hide селена
-hide шаол
+show шаол at right, size_shaol, disappear_fade 
+show селена at left, size_selena, disappear_fade 
 "Потім, коли піднімеш голову, тримай її високо й не сутулься. Не дивися королю прямо в очі, він цього не терпить. Говори лише тоді, коли він спитає, і до кожної фрази додавай «ваше величносте». І ще: що б ти від нього не почула — ні в якому разі не смій заперечувати."
 "Якщо ти йому не сподобаєшся — він накаже тебе повісити."
 "У Селени відчайдушно заболів лівий скронь. Навколишній простір раптом став крихким і ненадійним — вони забралися на таку небезпечну висоту… Перед тим, як завернути за ріг, Шаол зупинився."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 sh"Яка ти бліда сьогодні."
-hide селена
-hide шаол
+show шаол at right, size_shaol, disappear_fade 
+show селена at left, size_selena, disappear_fade 
 "Обличчя капітана розпливалося. Селена дихала ротом. Вона ненавиділа сукні з корсажем, королів і скляні замки."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 sh "Ну що ти так злякалася? Король — всього лише людина, але стоїть незрівнянно вище й тебе, й мене. Це вимагає особливого до нього ставлення. Аудієнція в короля — чиста формальність. Сьогодні тобі ні з ким не треба битися."
-hide селена
-hide шаол
+show шаол at right, size_shaol, disappear_fade 
+show селена at left, size_selena, disappear_fade 
 "У кінці коридору, біля масивних скляних дверей, Селена помітила чотирьох гвардійців. Капітан повільно підвів її до дверей. У ту ж саму мить двері розчинилися. Капітан і Селена опинилися в людній залі."
 
 #Епізод 6
@@ -1226,12 +1236,12 @@ hide шаол
 "Капітан зупинився на відкритому просторі перед троном. Селена теж завмерла і низько вклонилася королю."
 "Шаол торкнувся її плеча, даючи знак підвестися, але ноги погано слухалися. На щастя, капітан відвів її з центру зали туди, де стояв Дорін. Камзол принца повторював державні кольори королівства — червоний і золотий."
 
-show король at center
+show король at center, appear_fade 
 K "Ну що ж, раз усі нарешті зібралися, можна починати"
 hide король
 "Погляд Селени зупинився на рівні королівських грудей: широких, не особливо м’язистих, затягнутих у чорно-червоний мундир. На плечі короля був накинутий білий хутряний плащ, а на поясі висів меч. Ефес зроблений у вигляді роззявленої пащі виверни."
 "Цей меч умів разити наповал. Селена знала про це — і знала його ім’я: Нотунг."
-show король at center
+show король at center, appear_fade 
 K "Вас зібрали з усієї Ерілеї, щоб ви послужили імперії."
 hide король
 "Знать, яка обирала претендентів для змагань, майже повністю складалася з зморшкуватих старців, розодягнених і озброєних безглуздими церемоніальними мечами. Поруч стояли їхні обранці різного зросту й статури. Кожного претендента оточували не менше трьох озброєних стражників."
@@ -1240,61 +1250,61 @@ hide король
 "Поруч із герцогом Перрантгоном стояв кремезняк. Здавалося, усі його м’язи відлиті з заліза — що він усіляко підкреслював, бо був у обладунках без рукавів. Селена скривилася. Такі кулачища могли запросто проламати кінський череп. Не сказати, щоб у нього була огидна фізіономія."
 "Швидше навпаки: рівна засмага додавала обличчю деякої привабливості. Але Селені не сподобалася його манера триматися, а чорні очиці й випираючі білі зуби викликали огиду."
 "Тим часом король продовжував"
-show король at center
+show король at center, appear_fade 
 K "Кожному з вас доведеться змагатися за почесний титул мого захисника."
 hide король
 "Селені стало гидко. Яке лицемірство — називати захисниками безжальних убивць! Чи зможе вона служити королю, виконуючи його накази? Вона нервово ковтнула. Доведеться. Іншого вибору немає."
-show король at center
+show король at center, appear_fade 
 K "Змагання триватимуть тринадцять тижнів. Удень вам належить наполегливо вправлятися, а наприкінці кожного тижня вас чекають випробування. І щоразу найслабші будуть виключатися з подальшої боротьби."
 hide король
 "Двадцять чотири претенденти й усього тринадцять тижнів. Селену здивував такий розклад часу."
 "Ніби відчувши її питання, король пояснив"
-show король at center
+show король at center, appear_fade 
 K " Випробування будуть нелегкими — як і підготовка до них. Можливо, хтось із вас не доживе до кінця змагань. Якщо ми вважатимемо за потрібне — ускладнимо випробування, щоб відсіяти непридатних."
 K "І врахуйте: якщо хтось із вас наважиться виявити лінощі чи недбалість, якщо чимось мені не догодите — негайно повернетеся в ті смердючі нори, звідки вас витягли. На третій тиждень нового року, після святкування Ільмаса, четверо, що залишилися, зійдуться в поєдинках."
 K "Двох, що вижили, чекає завершальний бій, результат якого остаточно вирішить, кому дістанеться титул королівського захисника. Хоча при дворі й знають про якесь змагання, затіяне моїми найближчими друзями й радниками подробиці триматимуться в таємниці до названого мною часу."
 K "Проболтаєтеся хоч одним словом — підете на вогнище. Вам зрозумілі мої слова?"
 hide король
 "Селена кивнула важкою головою. Їй не вистачить часу, щоб перемогти суперників. Одне випробування на тиждень. Або більше, якщо одному королю здасться замало."
-show король at center
+show король at center, appear_fade 
 K "Тоді я хочу почути ваші відповіді! Хіба ви не відчуваєте вдячності за даровану вам рідкісну можливість відзначитися? Хіба вам не хочеться подякувати своєму королю й заявити про вашу вірність йому?"
 hide король
 "Селена вперлася очима в підлогу й пробурмотіла"
-show селена at left, size_selena
+show селена at left, size_selena, appear_fade 
 c "Дякую вам, ваше величносте, за виявлену мені милість."
 hide селена
 "Її слова потонули в гудінні голосів інших претендентів."
-show король at center
+show король at center, appear_fade 
 K "Я думаю — нас чекають тринадцять дуже веселих тижнів. Говорю кожному з вас: покажи свої найкращі якості, доведи, що гідний бути моїм захисником — і ти пізнаєш усю глибину моєї щедрості."
 hide король
 "На завоювання свободи в Селени залишалося трохи більше трьох місяців."
-show король at center
+show король at center, appear_fade 
 K "Державні справи вимагають мого від’їзду зі столиці, я поїду наступного тижня й повернуся не раніше поєдинків між чотирма, що залишилися."
 K " Але не думайте, що я перестану стежити за вами. Мені доповідатимуть про кожен ваш крок, і якщо я дізнаюся про найменші порушення чи якісь там випадковості… покарання неминуче."
 hide король
 "Претенденти знову закивали."
-show дорін at right
+show дорін at right, appear_fade 
 pr "Якщо ви закінчили, покірно прошу дозволити мені видалитися."
 hide дорін
 "Селена інстинктивно повернулася до принца, дивуючись його зухвалості. Дорін вклонився батькові й кивнув мовчазним радникам. Король поквапливо махнув рукою, навіть не глянувши на сина. Підморгнувши Шаолу, спадкоємний принц покинув залу."
-show король at center
+show король at center, appear_fade 
 K " Питання є? – спитав король."
 hide король
 "Сам його тон підказував, що будь-яке, навіть найневинніше питання може коштувати відправки на шибеницю. Претенденти мовчали. Знать — теж."
-show король at center
+show король at center, appear_fade 
 K "Ну, раз питань немає, дозволяю всім розійтися. І пам’ятайте: вас зібрали тут, аби примножити мою славу й славу моєї імперії. А тепер — ідіть. Усі геть."
 hide король
 "Селена й Шаол мовчки йшли коридором, поспішаючи якнайшвидше віддалитися від претендентів і їхніх покровителів. З кожним кроком до Селени поверталося життя й упевненість у собі. Лише коли вони завернули за ріг, Шаол полегшено зітхнув."
-show селена at left, size_selena
+show селена at left, size_selena, appear_fade 
 c "Хоч раз тобі вдалося тримати язик за зубами."
-show дорін at right
+show дорін at right, appear_fade 
 pr "Зате якими переконливими були її поклони й кивки"
 hide селена
 hide дорін
 "Пролунав поруч голос. Біля стіни стояв усміхнений Дорін."
-show шаол at right, size_shaol
+show шаол at right, size_shaol, appear_fade 
 sh "Що ви тут робите?"
-show дорін at left
+show дорін at left, appear_fade 
 pr "Вас чекав, більше нічого"
 sh "Увечері у вас вечеря, не забули?"
 pr "До вечора ще купа часу, а зараз я хочу поговорити з моєю захисницею, хочу вибачитися за батьківську грубість."
@@ -1302,9 +1312,9 @@ hide дорін
 hide шаол
 "Згадавши, як учора він кокетував із придворною дамою, Селена старалася дивитися просто перед собою. Спадкоємний принц пішов ліворуч від Шаола."
 "Він обернувся й, переконавшись, що за ними ніхто не стежить і продовжив"
-show дорін at right
+show дорін at right, appear_fade 
 pr "Думаю, Шаол не став присвячувати тебе в наш задум раніше часу. Перед королівською аудієнцією це було б дещо ризиковано."
-show селена at left, size_selena
+show селена at left, size_selena, appear_fade 
 с "Який ще задум?"
 pr "Задум стосується твоєї особи. Ніхто не повинен знати твого справжнього імені. Якщо твої суперники хоч трохи пронюхають про Адарланського асасина — це тобі тільки зашкодить."
 c "І хто ж я насправді, якщо не безжальна вбивця?"
@@ -1320,122 +1330,122 @@ c "Якщо вже ви так на цьому наполягаєте…"
 hide селена
 hide дорін
 "Доріан усміхнувся."
-show дорін at right
-show селена at left, size_selena
+show дорін at right, appear_fade 
+show селена at left, size_selena, appear_fade 
 pr "Радий, що споглядання твоїх майбутніх суперників не позбавило тебе зухвалості. До речі, як тобі Кейн?"
 c "Спитайте у Перрантгона, чим він годує свого улюбленця, і нехай мені готують таку ж їжу."
 hide селена
 hide дорін
 "Доріан хотів почути серйозну оцінку."
-show селена at left, size_selena
-show дорін at right
+show селена at left, size_selena, appear_fade 
+show дорін at right, appear_fade 
 c "Що вам сказати, ваше високосте? Такі гіганти, як Кейн, не відрізняються ні швидкістю, ні особливою спритністю. Їхня головна властивість — сила. Він цілком може прихлопнути мене одним ударом, але для цього йому спочатку треба мене спіймати."
 hide селена
 hide дорін
 "Селена швидко глянула на капітана, думаючи, що той почне заперечувати. Але Дорін його випередив"
-show селена at left, size_selena
-show дорін at right
+show селена at left, size_selena, appear_fade 
+show дорін at right, appear_fade 
 pr "Що ж, твої думки збіглися з моїми. А що ти скажеш про інших? Побачила серед них гідних суперників? У декого з них досить погана репутація."
 c "Інші здалися мені досить жалюгідними."
 hide селена
 hide дорін
 "Селена збрехала. Принц усміхнувся ще ширше."
-show селена at left, size_selena
-show дорін at right
+show селена at left, size_selena, appear_fade 
+show дорін at right, appear_fade 
 pr "Б’юся об заклад: вони й не підозрюють, що поразку їм завдасть дівчина."
 hide селена
 hide дорін
 "Селена не сприйняла його слова всерйоз і навіть хотіла спитати, чи не навчався він у дитинстві мистецтву говорити компліменти. Але поставити це питання їй завадила якась дама, що несподівано опинилася на їхньому шляху."
-show кальтена at right
+show кальтена at right, size_kaltena, appear_fade 
 ka "Ваше високосте! Який сюрприз!"
 hide кальтена
 "Вигукнула дама, роблячи глибокий реверанс. Глянувши на неї, Селена одразу впізнала свою ранкову мішень, у яку запустила квітковий горщик. За цей час дама встигла змінити червоне плаття на біле з золотою вишивкою."
 "Щодо несподіванки — це вона прибрехала. Швидше за все, знала, що принц проходитиме тут."
-show дорін at right
+show дорін at right, appear_fade 
 pr "Добрий день, пані Кальтена"
 hide дорін
-show кальтена at right
+show кальтена at right, size_kaltena, appear_fade 
 ka "Я щойно від її величності. Королева бажає вас бачити. Я сказала їй, що його високість перебуває на королівській аудієнції й тому…"
 hide кальтена
-show дорін at right
+show дорін at right, appear_fade 
 pr "Пробачте, пані Кальтена. Я ж ще не познайомив вас зі своєю супутницею."
 hide дорін
 "Дама помітно здригнулася."
-show селена at left, size_selena
-show дорін at right
+show селена at left, size_selena, appear_fade 
+show дорін at right, appear_fade 
 c "«Зовсім як кінь, якого огріли батогом» (подумки)"
 pr "Дозвольте вам представити пані Ліліану Гордену. Пані Ліліана, дозвольте вам представити пані Кальтену Ромпір."
 hide селена
 hide дорін
 "Найбільше Селені зараз хотілося повернутися й піти, але вона змусила себе усміхнутися й зробити реверанс. Кальтена у відповідь вклонилася, сяючи золотими візерунками на сукні."
-show селена at left, size_selena
-show дорін at right
+show селена at left, size_selena, appear_fade 
+show дорін at right, appear_fade 
 pr "Пані Ліліана родом із Бельхевена. Вона лише вчора приїхала до столиці."
 hide селена
 hide дорін
 "Кальтена окинула Селену швидким, оцінюючим поглядом і ніби забула про її існування."
-show кальтена at right
+show кальтена at right, size_kaltena, appear_fade 
 ka "Ваше високосте, довго ми ще зможемо насолоджуватися вашою присутністю в замку? А то ж чоловіки обожнюють зникати, змушуючи нас, бідних жінок, нудьгувати."
 hide кальтена
-show дорін at right
+show дорін at right, appear_fade 
 pr "Думаю, найближчі кілька років я нікуди не поїду."
 hide дорін
-show кальтена at right
+show кальтена at right, size_kaltena, appear_fade 
 ka "Кілька років? Який чудовий жарт, ваше високосте. А якщо це не жарт ви робите нам по-справжньому королівський подарунок."
 hide кальтена
-show дорін at right
+show дорін at right, appear_fade 
 pr "До речі, пані Ліліана й капітан Естфол — давні й дуже близькі друзі. Боюся, я їм встигну намозолити очі."
 hide дорін
-show кальтена at right
+show кальтена at right, size_kaltena, appear_fade 
 ka "Намозолити очі? Для нас усіх — велике щастя перебувати у вашому товаристві. А дозвольте спитати, ваше високосте: наше товариство вас не втомлює?"
 hide кальтена
 "Все це було сказано грайливим тоном, але під грайливістю ховалося роздратування. Напевно, Кальтена щиро вважала, що центром уваги в замку буде вона."
-show дорін at right
+show дорін at right, appear_fade 
 pr "Не знаю, як ви, а от пані Ліліана встигла втомитися від мого товариства. Навіть не знаю, хто з нас за час довгої дороги більше втомився один від одного."
 hide дорін
-show кальтена at right
+show кальтена at right, size_kaltena, appear_fade 
 ka "Де ви знайшли таке приголомшливе плаття? – промуркотіла Кальтена, зрозумівши, що далі виявляти зневагу до Селени не в її інтересах."
 hide кальтена
-show дорін at right
+show дорін at right, appear_fade 
 pr "Я наказав його пошити для панí Лíлíани."
 hide дорін
 "Він переглянувся з Селеною — і в очах обох відбилося однакове намірення. Селена відчула, що в них із принцом є один спільний ворог."
-show дорін at right
+show дорін at right, appear_fade 
 pr "Пошито точно за міркою, тому так чудово сидить. Правда, пані Кальтена?"
 hide дорін
 "Кальтена стиснула губи, але одразу змусила себе усміхнутися якнайщиріше."
-show кальтена at right
+show кальтена at right, size_kaltena, appear_fade 
 ka "Я зачарована. Ось тільки… цей непримітний відтінок… він підсилює природну блідість шкіри."
 hide кальтена
-show дорін at right
+show дорін at right, appear_fade 
 pr "До речі, батько пані Ліліани надзвичайно пишається тим, що в його доньки така бліда шкіра. Дуже велика рідкість для уродженців Бельхевена."
-show селена at left, size_selena
+show селена at left, size_selena, appear_fade 
 c "Ваше високосте, ви мене вгоняєте в фарбу. У порівнянні з пані Кальтеною я просто бліда копія."
 hide селена
 "Кальтена струснула головою."
-show кальтена at right
+show кальтена at right, size_kaltena, appear_fade 
 ka "Ви дуже добрі."
 hide кальтена
 "Принц переминався з ноги на ногу."
-show дорін at right
+show дорін at right, appear_fade 
 pr "Ви казали, королева бажає мене бачити? Тоді поспішу до неї."
 hide дорін
 "Він ввічливо уклонився й пішов у бік покоїв королеви."
-show шаол at right, size_shaol
+show шаол at right, size_shaol, appear_fade 
 sh "Нам теж треба йти. Пані Кальтена, вас провести?"
 hide шаол
 "Пропозиція була нещирою — і капітан навіть не приховував цього."
-show кальтена at right
+show кальтена at right, size_kaltena, appear_fade 
 ka "Ні, – сухо відповіла Кальтена, припинивши гру в чемність. – У мене зустріч з його світлістю, герцогом Перрантгоном. Пані Ліліана, сподіваюся, ми з вами ще побачимося. Нам із вами неодмінно варто подружитися."
 hide кальтена
 "Вимовляючи ці слова, Кальтена пильно стежила за Селеною."
-show селена at left, size_selena
+show селена at left, size_selena, appear_fade 
 c "Звичайно."
 hide селена
 "Кальтена пішла. Селена з капітаном навмисне йшли повільно, чекаючи, поки звук кроків Кальтени остаточно змовкне."
-show шаол at right, size_shaol
+show шаол at right, size_shaol, appear_fade 
 sh "Ну як, зачарована видовищем?"
-show селена at left, size_selena
+show селена at left, size_selena, appear_fade 
 c "Незвичайно."
 sh "Я помітив, у вас із Доріном однакове почуття гумору."
 c "А уявляєш, раптом ми з ним станемо близькими друзями, а тобі доведеться в’янути на самоті."
@@ -1443,8 +1453,8 @@ sh "Доріан воліє сходитися з жінками більш зн
 hide селена
 hide шаол
 "Селена різко повернулася до нього, і капітан усміхнувся"
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 sh "Скільки ж у тобі самозадоволення, «пані Ліліана»!"
 c "Просто я ненавиджу дамочок на кшталт цієї Кальтени! Вони так відчайдушно борються за чоловічу увагу, що готові зраджувати найкращих подруг і ламати життя іншим. І ми ще стверджуємо, що чоловічі мізки не годяться для мислення! Принаймні чоловіки пряміші й цілеспрямованіші."
 sh "Кажуть, батько Кальтени за багатством не поступається королю. Тому-то Перрантгон так і витанцьовує навколо неї. Уявляєш, вона прибула в замок не верхи, не в кареті, а в паланкіні розміром із селянську хату, якщо не більше. Її несли майже двісті миль."
@@ -1454,118 +1464,118 @@ c "А мені шкода її батька!"
 hide селена
 hide шаол
 "Вони обидва засміялися, не помітивши, що за розмовою дійшли до покоїв Селени."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 c "Ти сьогодні снідав? Я не встигла."
 sh "Мене чекають важливі справи. Треба підготувати супровід для короля."
 hide селена
 hide шаол
 "Селена відчинила двері, але все ще дивилася на Шаола. Усмішка знову осяяла його обличчя."
 "З покоїв смачно пахло і в Селени потекли слинки."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 c "Коли ти встиг?"
 hide селена
 hide шаол
 "Шаол похитав головою"
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 sh "Я тут ні до чого. Найкращий асасин Адарлану не повинна чекати, поки їй приготують їжу."
 hide селена
 hide шаол
 "Відійшовши на кілька кроків, капітан зупинився й, обернувшись до неї, сказав"
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 sh "Не забувай: завтра — справжній початок змагань. Хоч ти й стверджуєш, що не особливо потребуєш вправ, виспатися тобі треба обов’язково."
 hide селена
 hide шаол
 "Селена витріщила очі й шумно грюкнула дверима. Але потім, за обідом, вона згадувала слова капітана й наспівувала собі під ніс."
 "Селені здавалося, що вона ледве встигла задрімати, як раптом чиясь рука торкнулася її плеча. Їй хотілося спати, і ранкове сонце, що хлинуло крізь розсунуті штори, зовсім її не порадувало. Селена щось буркнула крізь сон, збираючись повернутися на інший бік."
-show шаол at right, size_shaol
+show шаол at right, size_shaol, appear_fade 
 sh "Вставай!"
 hide шаол
 "Звичайно, це був Шаол."
 "Селена юркнула під ковдру, вкрившись із головою, але Шаол скинув її на підлогу."
-show селена at left, size_selena
+show селена at left, size_selena, appear_fade 
 c "Мені холодно!"
 hide селена
 "Зараз її не хвилювало, що треба перемогти понад двадцять претендентів, а часу обмаль. Вона відчайдушно хотіла спати. І чому спадкоємний принц не витягнув її з Ендов’єра парою місяців раніше?"
 "Тоді б у неї вистачило часу відпочити й відновити сили. Чи Доріан поїхав за нею щойно, як дізнався про майбутні змагання?"
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 sh "Вставай. Ти безжально витрачаєш мій час."
 hide селена
 hide шаол
 "Шаол витягнув з-під її голови подушку"
 "Бурмочучи лайку, вона підповзла до краю ліжка й простягнула руку, торкаючись підлоги."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 c "Будь ласка, принеси мені туфлі. Підлога зовсім крижана."
 hide селена
 hide шаол
 "У відповідь Шаол щось буркнув, але не зрушив з місця. Селена зробила кілька кроків по холодній підлозі туди, де підошвами догори валялися туфлі. Потім пішла до їдальні. Там її вже чекав сніданок."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 sh "Їж більше. Через годину почнуться змагання."
 hide селена
 hide шаол
 "Ніби молода ведмедиця, вона плюхнулася на стілець. Вилки, ложки, ложечки — і жодного ножа. Довелося ткнути виделкою в цілий шматок смаженої ковбаси."
 "Шаол не сів за стіл, а залишився стояти в дверях."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 sh "Дозволь спитати, де це ти встигла так втомитися?"
 hide селена
 hide шаол
 "Селена залпом допила гранатовий сік і промокнула рот серветкою, згадавши, що ще якийсь місяць тому вона витиралася брудним рукавом."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 c "Читала майже до четвертої ранку. Я послала записку його високості, спитавши дозволу брати книги з королівської бібліотеки. Він мені дозволив і передав зі служницею сім книг зі своєї особистої бібліотеки, наказавши спочатку прочитати їх."
 hide селена
 hide шаол
 "Шаол недовіриво похитав головою."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 sh "Хто тобі дозволив слати принцу записки?"
 hide селена
 hide шаол
 "Селена задоволено усміхнулася й узялася за шинку, яку, за браком ножа, теж довелося розковирювати виделкою."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 c "Невже й на це треба питати дозволу? Подумаєш, усього-на-всього записка. Принц міг би на неї й не відповісти. І потім, я ж його захисниця. У поводженні зі мною він не зобов’язаний брати приклад із тебе."
 sh "Але ти ж асасин."
 c "І що? Тому мені заборонено читати книги? А якщо я назвуся злодійкою коштовностей — ти станеш ставитися до мене з більшою люб’язністю?"
 hide селена
 hide шаол
 "Селена зачерпнула кашу, спробувала й додала в сірувату масу чотири ложки тростинного цукру. Зараз вона думала тільки про суперників. Дійсно чи треба побоюватися лише Кейна? Щоб прогнати тривожні думки, Селена переключилася на розглядання чорного мундира Шаола."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 c "Тебе що, зобов’язують постійно ходити в формі? Невже тобі не хочеться одягнутися по-іншому?"
 sh "Поспішай."
 hide селена
 hide шаол
 "Їй раптом розхотілося їсти. Вона відштовхнула тарілку з кашею."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 c "Тоді я мушу перевдягнутися."
 hide селена
 hide шаол
 "Селена озирнулася на двері, щоб покликати Фаліпу, потім передумала."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 c "Я ж мушу знати, яким буде сьогоднішнє змагання. Раптом не так наряджуся. Від одягу багато залежить."
 sh "Так я сам нічого не знаю. Подробиць мені не повідомляли."
 hide селена
 hide шаол
 "Селена скочила, збираючись іти до гардеробної. Капітан покликав служницю."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 sh "Одягни пані в штани й блузу. Вибери ті, що посвободніше. І накидка зверху."
 hide селена
 hide шаол
 "Служниця мовчки пройшла до гардеробної. Селена — слідом."
 "Через кілька хвилин Селена з’явилася вже одягнена й хмуро оглянула свій наряд."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 c "Я виглядаю як опудало. Ну що це за балахон? Я просто тону в цих штанях. І блуза на мені телімпається."
 sh "Досить нити. Там взагалі ніхто на це не подивиться."
 hide селена
@@ -1577,14 +1587,14 @@ hide шаол
 "Не гаючи часу, вони вправлялися — але не між собою, а з наставниками. Швидше за все, наставників для них обирали ті самі, хто обирав і їх. Гвардійці пильно стежили за кожним претендентом."
 "Коли Селена з’явилася в залі, ніхто й не глянув на неї — якщо не рахувати сіроокого хлопця, що запам’ятався їй учора. Він злегка усміхнувся їй і продовжив стріляти з лука по мішені. Усі стріли з лякаючою точністю потрапляли в самісінький центр."
 "Селена уважно розглядала стійку зі зброєю."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 c "Думаєш, я схоплюся за булаву? У таку ранню годину?"
 hide селена
 hide шаол
 "Шаол знизав плечима. Тим часом у залу увійшли ще шестеро гвардійців і приєдналися до своїх товаришів. Усі стражники були з оголеними мечами."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 sh "Ці приставлені стежити за тобою. Раджу не намагатися влаштувати якусь дурницю.(пошепки)"
 c "Ти, здається, забув, що я — злодійка коштовностей."
 hide селена
@@ -1593,20 +1603,20 @@ hide шаол
 "Улюбленою зброєю Селени були невеликі кинджали з вузьким лезом, але вона вміла тримати в руках усе, що тут знаходилося. Вона оглянула залу й постаралася приховати презирливу гримасу."
 "Як і вчора, більшість претендентів не здавалися їй серйозними суперниками. І тут краєчком ока вона побачила, як у залу входить Кейн."
 "Він з’явився в супроводі двох караульних і кремезного чоловіка, вкритого шрамами. Напевно, це був його наставник. Селена розправила плечі. Кейн ішов прямо до неї. Його товсті губи розпливалися в усмішці."
-show кейн at right
+show кейн at right, appear_fade 
 ke "Доброго ранку"
 hide кейн
 "Темні очі Кейна ковзнули по її фігурі, потім зупинилися на обличчі."
-show кейн at right
+show кейн at right, appear_fade 
 ke "А я думав, ти вже втекла додому."
 hide кейн
 "Селена теж усміхнулася — але не розтуляючи губ."
-show селена at left, size_selena
+show селена at left, size_selena, appear_fade 
 c "Навіщо ж мені додому, якщо забава тільки починається?"
 hide селена
 "Розправитися з ним було зовсім просто. Груди м’язів її не лякали. Достатньо зробити різкий поворот, схопити Кейна за шию й точним ударом збити з ніг, щоб він ткнувся обличчям у підлогу. Всередині в неї кипіла справжня лють. Шаол уловив її стан."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 sh "Свій запал прибережи для змагань (пошепки)"
 c "Я вб’ю його (пошепки)"
 sh "Нічого подібного. Навіть не намагайся. Якщо варта не прихлопне тебе на місці — повернення в Ендов’єр тобі забезпечене. Не розумію, чим він тобі так противний. Звичайний верзила з королівської армії. Краще доживися поєдинку з ним і не витрачай сили на ненависть."
@@ -1618,8 +1628,8 @@ hide селена
 hide шаол
 "Кінчиком меча Шаол указав на стійку зі зброєю."
 "Селена мовчки розв’язала шнурки плаща й скинула його на підлогу."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 sh "Я хочу переконатися, що всі твої хвалькуваті заяви відповідають дійсності."
 hide селена
 hide шаол
@@ -1629,28 +1639,28 @@ hide шаол
 "Її однаково приваблювали мисливський кинджал і вишукана рапіра з химерно прикрашеною гардою. Рапіра мала довге лезо — це дозволяло з безпечної відстані вдарити капітана прямо в груди."
 "Селена вибрала рапіру. Лезо відгукнулося мелодійним дзвоном. Зручна зброя, сильна й легка. Як дивно: за обідом їй не дають навіть тупих ножів для масла, а тут… Чи його величність і його високість сподіваються на пильність і спритність своїх гвардійців?"
 "Шаол кинув свій плащ поверх її плаща, залишившись у чорній форменій сорочці."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 sh "До бар’єру!"
 hide селена
 hide шаол
 "Сказав він, витягаючи меч. Шаол став в оборонну позу. Селена скривилася."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 c "А може, ти спочатку покажеш мені, що до чого?"
 hide селена
 hide шаол
 "Досить голосно спитала Селена, граючись рапірою. Її пальці насолоджувалися прохолодою ефеса."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 c "Я ж цілий рік проторчала в Ендов’єрі. Там недовго всі навички забути."
 sh "Я пам’ятаю, скількох ти вбила, коли намагалася втекти. Сумніваюся, що ти втратила навички."
 c "Убивала я не благородною зброєю, а звичайною киркою. Кому череп розколола, кому живіт розполосувала."
 hide селена
 hide шаол
 "Усмішка Селени ставала все хижіше. На щастя, ніхто з претендентів не чув її слів. Усі, крім Шаола, забули про її присутність."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 c "Якщо ти прирівнюєш грубу розправу з наглядачами до мистецтва поєдинку… якою ж твоя манера бою, капітане Естфоле?"
 hide селена
 hide шаол
@@ -1660,8 +1670,8 @@ hide шаол
 "Капітан завдав другого удару — і Селена легко його відбила. У неї нили руки, що відвикли тримати зброю, і все ж вона не пропустила жодного капітанського випаду."
 "Бій на мечах подібний до танцю. І в танцях, і в поєдинку за одними рухами неодмінно мають іти інші — інакше зіб’єшся."
 "Але якщо, танцюючи, можна весело балакати з партнером і встигати озиратися по боках — тут ти мовчки стежиш за його мечем, забувши про навколишній світ. Претенденти, караульні й уся зала перестали існувати, злившись в узор тіней і сонячних плям."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 sh "Добре. Навіть дуже добре."
 hide селена
 hide шаол
@@ -1670,53 +1680,53 @@ hide шаол
 "Селена відступила й зробила фальшивий випад, що змінився вишуканим піруетом. Капітана це застало зненацька — і він ледве встиг парирувати удар."
 "Вона продовжувала наступати. Її рука з рапірою то здіймалася вгору, то стрімко опускалася. Їй навіть подобався тупий біль у плечі. Біль посилювався щоразу, коли леза рапіри й меча стикалися."
 "Селена насолоджувалася цією грою й ще деякий час дражнила капітана. Шаол спробував збентежити її, завдавши несподіваного удару на рівні обличчя. Його випад лише розлютив Селену. Вона різко вскинула лікоть, змусивши капітана опустити руку."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 sh "Коли б’єшся зі мною, рекомендую пам’ятати одну мою особливість."
 hide селена
 hide шаол
 "Важко дихаючи, кинув їй капітан. В його золотисто-карих очах грало сонце."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 c "Яку ж?"
 sh "Я не програю."
 hide селена
 hide шаол
 "Шаол усміхнувся їй — і перш ніж до Селени дійшов сенс його слів, щось врізалося їй у ногу й… Тріумф змінився подивом. Ще через секунду Селена опинилася на мармуровій підлозі. Рапіра вислизнула з її пальців. Кінчик меча Шаола застиг над серцем Селени."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 sh "Я виграв."
 hide селена
 hide шаол
 "Вона підвелася на ліктях."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 c "Ти підставив мені підніжку. Це не можна вважати перемогою."
 sh "Але не я зараз лежу на підлозі, і меч спрямований не в моє серце."
 hide селена
 hide шаол
 "З вух Селени ніби вишибли пробки. Навколо вправлялися, сопіли й пихтіли претенденти, наповнюючи залу дзвоном і скреготом зброї. Усім було не до неї. Усім, крім Кейна. Той широко усміхався. Від образи й безсилля Селена оскалила зуби."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 sh "Навички в тебе є. Але багато твоїх рухів зовсім розхристані."
 hide селена
 hide шаол
 "Селена повернулася до нього й нагородила сердитим поглядом."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 c "Мені це ніколи не заважало успішно вбивати."
 hide селена
 hide шаол
 "Шаол усміхнувся й кінчиком меча вказав на стійку зі зброєю, дозволяючи Селені підвестися."
-show шаол at right, size_shaol
-show селена at left, size_selena
+show шаол at right, size_shaol, appear_fade 
+show селена at left, size_selena, appear_fade 
 sh "Вибери собі іншу зброю. Хочеться подивитися, як ти нею володієш. І зроби так, щоб я спітнів. Прошу тебе."
 c "Ти вдосталь спітнієш, коли я живцем здеру з тебе шкіру й позбавлю зору."
 sh "Мені подобається твій настрій."
 hide селена
 hide шаол
 "Селена, не думаючи, витягла зі стійки пару мисливських кинджалів."
-show селена at left, size_selena
+show селена at left, size_selena, appear_fade 
 c "«Мої давні друзі» (подумки)"
 
 #Епізод 7

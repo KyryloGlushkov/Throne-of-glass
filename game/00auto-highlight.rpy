@@ -188,7 +188,7 @@ init -10 python:
                 trans.zoom = min(curr_ease * zoom_change + (1.0-zoom_change), 1.0)
                 trans.yoffset = y_amount + (-y_amount * curr_ease)
             else:      # Apply the not-talking transformation
-                trans.matrixcolor = SaturationMatrix(1.0 - curr_ease * sat_change) * BrightnessMatrix(curr_ease * -bright_change)
+                trans.matrixcolor = SaturationMatrix(0.0) * BrightnessMatrix(curr_ease * -bright_change)
                 trans.zoom = max(1.0 - curr_ease * zoom_change, (1.0-zoom_change))
                 trans.yoffset = y_amount * curr_ease
             return 0

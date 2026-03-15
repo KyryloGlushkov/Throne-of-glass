@@ -18,6 +18,30 @@
         """
     )
 
+    def get_char_center (tag):
+        match tag:
+            case "Селена": image_name = "селена"
+            case "Принц Дорін": image_name = "дорін"
+            case "Герцог Перрантгон": image_name = "перрантгон"
+            case "Кальтена": image_name = "кальтена"
+            case "Капітан Єстфол": image_name = "шаол"
+            case "Нехемія": image_name = "нехемія"
+            case "Гвардієць 1": image_name = "гвардієць1"
+            case "Гвардієць 2": image_name = "гвардієць2"
+            case "Фаліпа": image_name = "фаліпа"
+            case "Король": image_name = "король"
+            case "Спутниця 1": image_name = "спутниця1"
+            case "Спутниця 2": image_name = "спутниця2"            
+            case "Кейн": image_name = "кейн"
+            case "Брулло": image_name = "брулло"
+            case "Ксав'єр": image_name = "ксавєр"
+        
+        char_pos = renpy.get_image_bounds(image_name)
+
+        if float((char_pos[0] + (char_pos[2] / 2))/config.screen_width) < 0.5:
+            return 0.2
+        else:
+            return 0.8
 
 transform grad_selena:
     shader "name.gradient"
@@ -144,43 +168,43 @@ screen say(who, what):
                 id "namebox"
 
                 if who == "Селена":
-                    text who style "name_grad_common" at grad_selena
+                    text who style "name_grad_common" at grad_selena xalign get_char_center(who)
 
                 elif who == "Принц Дорін":
-                    text who style "name_grad_common" at grad_dorin
+                    text who style "name_grad_common" at grad_dorin xalign get_char_center(who)
 
                 elif who == "Герцог Перрантгон":
-                    text who style "name_grad_common" at grad_duke
+                    text who style "name_grad_common" at grad_duke xalign get_char_center(who)
 
                 elif who == "Кальтена":
-                    text who style "name_grad_common" at grad_kalt
+                    text who style "name_grad_common" at grad_kalt xalign get_char_center(who)
 
                 elif who == "Капітан Єстфол":
-                    text who style "name_grad_common" at grad_captain
+                    text who style "name_grad_common" at grad_captain xalign get_char_center(who)
 
                 elif who == "Нехемія":
-                    text who style "name_grad_common" at grad_nehemia
+                    text who style "name_grad_common" at grad_nehemia xalign get_char_center(who)
 
                 elif who == "Гвардієць 1" or who == "Гвардієць 2":
-                    text who style "name_grad_common" at grad_guard
+                    text who style "name_grad_common" at grad_guard xalign get_char_center(who)
 
                 elif who == "Фаліпа":
-                    text who style "name_grad_common" at grad_falipa
+                    text who style "name_grad_common" at grad_falipa xalign get_char_center(who)
 
                 elif who == "Король":
-                    text who style "name_grad_common" at grad_king
+                    text who style "name_grad_common" at grad_king xalign get_char_center(who)
 
                 elif who == "Спутниця 1" or who == "Спутниця 2":
-                    text who style "name_grad_common" at grad_companion
+                    text who style "name_grad_common" at grad_companion xalign get_char_center(who)
 
                 elif who == "Кейн":
-                    text who style "name_grad_common" at grad_kain
+                    text who style "name_grad_common" at grad_kain xalign get_char_center(who)
 
                 elif who == "Брулло":
-                    text who style "name_grad_common" at grad_brullo
+                    text who style "name_grad_common" at grad_brullo xalign get_char_center(who)
 
                 elif who == "Ксав'єр":
-                    text who style "name_grad_common" at grad_xavier
+                    text who style "name_grad_common" at grad_xavier xalign get_char_center(who)
 
                 else:
                     text who style "name_grad_common"

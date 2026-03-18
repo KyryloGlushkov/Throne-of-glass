@@ -11,6 +11,14 @@ transform size_guard:
     fit "contain"
     yalign -0.2
 
+transform size_falipa:
+    ysize 940
+    fit "contain"
+
+transform size_kaltena:
+    ysize 950
+    fit "contain"
+
 transform right:
     xalign 0.9
     yalign 1.0

@@ -213,7 +213,7 @@ screen say(who, what):
 
 label start:
     stop music fadeout 1.0
-    scene коридорпалацу
+    scene expression "images/backgrounds/The_corridor.jpg"
     with fade
 
 "Коридори палацу здавалися нескінченними. Кам’яні стіни відбивали кожен звук, і навіть тихе клацання кроків лунало, наче удари молота."
@@ -225,7 +225,8 @@ show селена at left, size_selena, appear_fade
 c "Я не слабка."
 sh "Побачимо."
 show селена at left, size_selena, disappear_fade
-show шаол at right, size_shaol, disappear_fade 
+show шаол at right, size_shaol, disappear_fade
+scene expression "images/backgrounds/the throne room.jpg"
 "Вони зупинилися перед високими дверима, прикрашеними золотими візерунками. Двері відчинилися, і світло тронної зали залило простір."#
 "На підвищенні сидів принц Дорін. Його погляд був уважний, але сповнений цікавості — він розглядав ту, про кого чув легенди."
 "Поруч стояв герцог Перрантгон, його усмішка була холодною, а очі — пильними, наче він оцінював здобич."

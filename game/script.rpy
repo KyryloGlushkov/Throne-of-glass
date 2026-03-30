@@ -211,13 +211,15 @@ screen say(who, what):
 
         text what id "what"
 
+
+
 label start:
     stop music fadeout 1.0
     scene expression "images/backgrounds/The_corridor.jpg"
     with fade
 play music "audio/Neutral.mp3" fadein 2.0
 "Коридори палацу здавалися нескінченними. Кам’яні стіни відбивали кожен звук, і навіть тихе клацання кроків лунало, наче удари молота."
-scene expression "images/backgrounds/The glass castle day.jpg"
+scene expression "images/backgrounds/Raftholl Street1.jpg" at scale_to_1080p
 with fade
 "Селену вели вперед. Її руки були скуто, але голова піднята високо — вона не дозволяла собі виглядати зламаною."
 scene expression "images/backgrounds/The glass castle night.jpg"

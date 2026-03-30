@@ -26,3 +26,6 @@ transform right:
 transform left:
     xalign 0.1
     yalign 1.0
+
+transform scale_to_1080p:
+    xysize (1920, 1080)

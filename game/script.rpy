@@ -213,16 +213,18 @@ screen say(who, what):
 
         text what id "what"
 
+
+
 label start:
     stop music fadeout 1.0
     scene expression "images/backgrounds/The_corridor.jpg"
     with fade
 play music "audio/Neutral.mp3" fadein 2.0
 "Коридори палацу здавалися нескінченними. Кам’яні стіни відбивали кожен звук, і навіть тихе клацання кроків лунало, наче удари молота."
-scene expression "images/backgrounds/1.jpg"
+scene expression "images/backgrounds/Raftholl Street1.jpg" at scale_to_1080p
 with fade
 "Селену вели вперед. Її руки були скуто, але голова піднята високо — вона не дозволяла собі виглядати зламаною."
-scene expression "images/backgrounds/2.jpg"
+scene expression "images/backgrounds/The glass castle night.jpg"
 with fade
 "Попри лахміття й сліди копалень на обличчі, у її очах жевріла грізна сила, яка змушувала охоронців відводити погляд."
 show шаол at right, size_shaol, appear_fade 
@@ -234,13 +236,13 @@ show селена at left, size_selena, disappear_fade
 show шаол at right, size_shaol, disappear_fade
 scene expression "images/backgrounds/the throne room.jpg"
 "Вони зупинилися перед високими дверима, прикрашеними золотими візерунками. Двері відчинилися, і світло тронної зали залило простір."
-scene expression "images/backgrounds/3.jpg"
+scene expression "images/backgrounds/Raftholl Street1.jpg"
 with fade
 "На підвищенні сидів принц Дорін. Його погляд був уважний, але сповнений цікавості — він розглядав ту, про кого чув легенди."
-scene expression "images/backgrounds/4.jpg"
+scene expression "images/backgrounds/Raftholl_Street2.jpg"
 with fade
 "Поруч стояв герцог Перрантгон, його усмішка була холодною, а очі — пильними, наче він оцінював здобич."
-scene expression "images/backgrounds/5.jpg"
+scene expression "images/backgrounds/tent.jpg"
 with fade
 play music "audio/S&D.mp3" fadeout 1.0 fadein 2.0
 show селена at left, size_selena, appear_fade 

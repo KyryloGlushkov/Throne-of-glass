@@ -234,10 +234,10 @@ show селена at left, size_selena, disappear_fade
 show шаол at right, size_shaol, disappear_fade
 scene expression "images/backgrounds/the throne room.jpg"
 "Вони зупинилися перед високими дверима, прикрашеними золотими візерунками. Двері відчинилися, і світло тронної зали залило простір."
-scene expression "images/backgrounds/Raftholl Street1.jpg"
+scene expression "images/backgrounds/Raftholl Street1.jpg" at scale_to_1080p
 with fade
 "На підвищенні сидів принц Дорін. Його погляд був уважний, але сповнений цікавості — він розглядав ту, про кого чув легенди."
-scene expression "images/backgrounds/Raftholl_Street2.jpg"
+scene expression "images/backgrounds/Raftholl_Street2.jpg" at scale_to_1080p
 with fade
 "Поруч стояв герцог Перрантгон, його усмішка була холодною, а очі — пильними, наче він оцінював здобич."
 scene expression "images/backgrounds/tent.jpg"

@@ -38,7 +38,7 @@
         
         char_pos = renpy.get_image_bounds(image_name)
 
-        if float((char_pos[0] + (char_pos[2] / 2))/config.screen_width) < 0.5:
+        if (char_pos == None or float((char_pos[0] + (char_pos[2] / 2))/config.screen_width) < 0.5):
             return 0.2
         else:
             return 0.8

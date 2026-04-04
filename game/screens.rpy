@@ -151,7 +151,7 @@ style say_label:
     properties gui.text_properties("name", accent=True)
     xalign gui.name_xalign
     yalign 0.5
-    color None  # Обов'язково! Щоб who_transform градієнт спрацював
+    color None  
     bold False 
 style say_dialogue:
     properties gui.text_properties("dialogue")
@@ -303,8 +303,8 @@ style quick_button_text:
     ymaximum 60
 
     # Відступи тексту всередині кнопки (критично важливо для висоти 60 px)
-    xpadding 30     # якщо текст довгий — збільш до 40–50
-    ypadding 10     # для висоти 60 px — 8–15 px, щоб текст не торкався верху/низу
+    xpadding 30  
+    ypadding 10   
 
     xalign 0.5
     yalign 0.5
@@ -365,7 +365,7 @@ screen navigation():
             textbutton _("Почати")       action Start()                    style "glass_button"
             textbutton _("Завантажити")  action ShowMenu("load")           style "glass_button"
             textbutton _("Налаштування") action ShowMenu("preferences")    style "glass_button"
-
+            textbutton _("Міні-ігри")   action ShowMenu("minigames_menu") style "glass_button"
         # ПРАВА КОЛОНКА
         vbox:
             xalign 1.0
@@ -1663,3 +1663,95 @@ style slider_vbox:
 style slider_slider:
     variant "small"
     xsize 900
+
+screen shooting_game_screen():
+    modal True
+    add "images/minigames/shooting/bg_range.jpg"
+
+    frame:
+        xpos 0 ypos 0
+        xsize 1920 ysize 80
+        background "#00000088"
+
+        hbox:
+            xalign 0.5 yalign 0.5
+            spacing 120
+
+            text "🎯 Рахунок: [shooting_score]" size 44 color "#FFFFFF"
+
+            if shooting_combo >= 2:
+                text "⚡ Combo x[shooting_combo]!" size 44 color "#FFD700" at shooting_pulse()
+            else:
+                text "" size 44
+
+            if shooting_time <= 5:
+                text "⏱ Час: [shooting_time]" size 44 color "#FF4444" at shooting_shake()
+            else:
+                text "⏱ Час: [shooting_time]" size 44 color "#FFFFFF"
+
+    timer 1.0 repeat True action If(
+        shooting_time > 0,
+        SetVariable("shooting_time", shooting_time - 1),
+        Return()
+    )
+
+    button:
+        xpos 0 ypos 80
+        xsize 1920 ysize 1000
+        action [
+            Play("sound", "audio/miss.mp3"),
+            SetVariable("shooting_score", max(0, shooting_score - 2)),
+            SetVariable("shooting_combo", 0)
+        ]
+
+    imagebutton:
+        idle  im.Scale("images/minigames/shooting/target.png", 180, 180)
+        hover im.Scale("images/minigames/shooting/target.png", 195, 195)
+        at shooting_move_0()
+        action [
+            Play("sound", "audio/shot.mp3"),
+            SetVariable("shooting_combo", shooting_combo + 1),
+            SetVariable("shooting_score", shooting_score + max(1, shooting_combo)),
+            Function(renpy.notify, "+{} очок!".format(max(1, shooting_combo)))
+        ]
+
+    imagebutton:
+        idle  im.Scale("images/minigames/shooting/target.png", 130, 130)
+        hover im.Scale("images/minigames/shooting/target.png", 145, 145)
+        at shooting_move_1()
+        action [
+            Play("sound", "audio/shot.mp3"),
+            SetVariable("shooting_combo", shooting_combo + 1),
+            SetVariable("shooting_score", shooting_score + max(2, shooting_combo * 2)),
+            Function(renpy.notify, "+{} очок!".format(max(2, shooting_combo * 2)))
+        ]
+
+    imagebutton:
+        idle  im.Scale("images/minigames/shooting/target.png", 80, 80)
+        hover im.Scale("images/minigames/shooting/target.png", 90, 90)
+        at shooting_move_2()
+        action [
+            Play("sound", "audio/shot.mp3"),
+            SetVariable("shooting_combo", shooting_combo + 1),
+            SetVariable("shooting_score", shooting_score + max(3, shooting_combo * 3)),
+            Function(renpy.notify, "🎯 +{} очок!".format(max(3, shooting_combo * 3)))
+        ]
+
+screen minigames_menu():
+    tag menu
+    add gui.main_menu_background
+
+    vbox:
+        xalign 0.5
+        yalign 0.5
+        spacing 30
+
+        text "Міні-ігри" size 60 xalign 0.5
+
+        textbutton "Тир":
+            action Start("shooting_game")
+            style "glass_button"
+
+        textbutton "Назад":
+            action Return()
+            style "glass_button"

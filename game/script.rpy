@@ -1097,7 +1097,7 @@ show селена at left, size_selena, disappear_fade
 show шаол at right, size_shaol, disappear_fade 
 "Селена подолала замішання, і, на щастя, скоро гуркіт припинився."
 #Clock Tower
-scene expression "images/backgrounds/The_courtyard_of_the_glass_castle.jpg"   at scale_to_1080p
+scene expression "images/backgrounds/Clock Tower.jpg"   at scale_to_1080p
 with fade
 "У цьому саду вони вже були, але з іншого боку, де Часову вежу ховали дерева. Тепер перед Селеною височіла похмура споруда з чорного, з чорнильним відливом, каменю. Усі чотири циферблати прикрашали парні горгульї. Їхні морди застигли в беззвучному крику."
 show шаол at right, size_shaol, appear_fade 

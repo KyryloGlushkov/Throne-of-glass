@@ -19,6 +19,20 @@ transform size_kaltena:
     ysize 950
     fit "contain"
 
+transform size_kane:
+    ysize 1500
+    fit "contain"
+    yalign -0.2
+
+transform size_king:
+    ysize 1500
+    fit "contain"
+    yalign -0.2
+
+transform size_companion:
+    ysize 900
+    fit "contain"
+
 transform right:
     xalign 0.9
     yalign 1.0

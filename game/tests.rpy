@@ -12,6 +12,7 @@ testsuite sasha:
     testcase smoke_test:
         assert screen "main_menu"
         click "Почати"
+        advance
         assert screen "say"
 
     testcase pref_display_test:
@@ -48,9 +49,11 @@ testsuite kiril:
         exit
 
     testcase e2e_test:
+        $ _preferences.skip_unseen = True
         click "Почати"
-        advance until screen "main_menu"
-        assert screen "main_menu"
+        skip
+        assert screen "main_menu" timeout 60.0
+
 
     testcase main_menu_ui_test:
         click "Завантажити"
@@ -98,6 +101,7 @@ testsuite nastya:
 
     testcase game_ui_test:
         click "Почати"
+        advance
         assert screen "say"
 
         click "Історія"
